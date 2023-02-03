@@ -1,5 +1,4 @@
-import "../css/home.css";
-import { Link } from "react-router-dom";
+import "../css/home.css"
 export default function Home() {
 
     return (
@@ -20,10 +19,14 @@ export default function Home() {
 
                 
                 <div class="wrap">
-                    <Link to="/home"> <button class='button'>Let's Go</button></Link> 
+                    <button class="button">Let's Go</button>
                 </div>
             </div>
 
+
+            <div>
+                college details
+            </div>
         </>
     )
 }
