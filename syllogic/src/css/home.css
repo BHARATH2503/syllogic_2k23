@@ -14,6 +14,7 @@
   /* place-content: center; */
   text-transform: uppercase;
   height: 30vh;
+  margin-bottom: 5%;
 }
 .wrapper > div {
   
@@ -22,7 +23,7 @@
   color: #363833;
   font-family: 'Poppins', sans-serif;
   font-weight: 1000;
-  font-size: clamp( 3em, 10vw, 15rem);
+  font-size: clamp( 3em, 6vw, 15rem);
   grid-area: overlap;
   letter-spacing: 1px;
   -webkit-text-stroke: 4px transparent;
@@ -55,22 +56,17 @@ div.fg{
 
 
 
-.dept1{
-  padding: 10%;
-  
-}
-
-
 .full1{
   height: 100% ;
+  padding: 10%;
 
 }
 
 
 
 .wrap {
-  margin-top: 25%;
-  padding-bottom:10%;
+ 
+  
   height: 100%;
   display: flex;
   align-items: center;
@@ -152,3 +148,5 @@ button:hover::after, button:focus::after {
     opacity: 0;
   }
 }
+
+
