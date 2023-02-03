@@ -1,8 +1,9 @@
 import './css/App.css';
+import Home from './components/home';
 function App() {
   return (
     <div className="App">
-      <h1>Development stage</h1>
+      <Home/>
     </div>
   );
 }
