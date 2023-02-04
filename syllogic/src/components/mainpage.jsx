@@ -2,6 +2,7 @@ import React from "react";
 import '../css/mainpage.css'
 import '../css/destination.css'
 import '../css/destin.scss'
+import '../css/hero.css'
 
 import kec from "../assets/kec.png"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -128,6 +129,64 @@ export default function Mainpage() {
 
             </div>
 
+
+            {/* contact */}
+
+            {/* <div className="contact">
+
+                <div className="row">
+
+                    <div className="col-12 mt-5">
+                        <img src="https://lh3.googleusercontent.com/aXMdHIDlOz3EcYrfJfHjhfNh2FmIXpmsE2-GmsLHj-2CSWTaobxJ-9u6OkODqLMwUE3O4BDAIURQfhEFNTo3BRw=w1280" alt="" />
+                        <h2>kanni</h2>
+                    </div>
+                </div>
+                <div className="row mt-5">
+
+                    <div className="col-4">
+                        <h2>periasamy</h2>
+
+                    </div>
+                    <div className="col-4">
+                        <h2>sakthish</h2>
+
+                    </div>
+                    <div className="col-4">
+                        <h2>mona</h2>
+
+                    </div>
+
+                </div>
+
+            </div> */}
+            <div className='hero'>
+                <div className='content'>
+                    <div className="row">
+
+                        <div className="col-12 mt-5">
+                            <img src="https://lh3.googleusercontent.com/aXMdHIDlOz3EcYrfJfHjhfNh2FmIXpmsE2-GmsLHj-2CSWTaobxJ-9u6OkODqLMwUE3O4BDAIURQfhEFNTo3BRw=w1280" alt="" />
+                            <h2>kanni</h2>
+                        </div>
+                    </div>
+                    <div className="row mt-5">
+
+                        <div className="col-4">
+                            <h2>periasamy</h2>
+
+                        </div>
+                        <div className="col-4">
+                            <h2>sakthish</h2>
+
+                        </div>
+                        <div className="col-4">
+                            <h2>mona</h2>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
 
 
 
