@@ -20,7 +20,7 @@ export default function Home() {
 
                 
                 <div class="wrap">
-                <Link to="/home"> <button class='button'>Let's Go</button></Link> 
+                <Link to="/home"> <button class='button1'>Let's Go</button></Link> 
                 </div>
             </div>
 
