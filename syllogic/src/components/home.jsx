@@ -1,5 +1,6 @@
 import "../css/home.css";
 import { Link } from "react-router-dom";
+import Contact from "./contact";
 export default function Home() {
 
     return (
@@ -22,8 +23,8 @@ export default function Home() {
                 <div class="wrap">
                     <Link to="/home"> <button class='button'>Let's Go</button></Link> 
                 </div>
+                {/* <div><Contact/></div> */}
             </div>
-
         </>
     )
 }
