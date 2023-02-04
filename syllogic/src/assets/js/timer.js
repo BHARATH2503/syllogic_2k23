@@ -1,4 +1,3 @@
-
 let countDown=()=>{
     let futureDate=new Date("11 Mar 2023");
     let currentDate=new Date();
@@ -22,6 +21,4 @@ let countDown=()=>{
         secItem.innerHTML = sec;
 
 }
-
-
 setInterval(countDown,1000);
