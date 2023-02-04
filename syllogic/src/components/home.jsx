@@ -1,4 +1,4 @@
-import "../css/home.css";
+import "../css/home.css"
 import { Link } from "react-router-dom";
 import Contact from "./contact";
 export default function Home() {
@@ -21,9 +21,14 @@ export default function Home() {
 
                 
                 <div class="wrap">
-                    <Link to="/home"> <button class='button'>Let's Go</button></Link> 
+                <Link to="/home"> <button class='button1'>Let's Go</button></Link> 
                 </div>
                 {/* <div><Contact/></div> */}
+            </div>
+
+
+            <div>
+                college details
             </div>
         </>
     )
