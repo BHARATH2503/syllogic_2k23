@@ -2,83 +2,37 @@ import React from "react";
 import '../css/mainpage.css'
 import '../css/destination.css'
 import '../css/destin.scss'
-
-import kec from "../assets/kec.png"
+import Logo from '../assets/chemlogo2.png'
+import {Navbar} from 'react-bootstrap';
+// import kec from "../assets/kec.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Link } from "react-router-dom";
 export default function Mainpage() {
     return (
         <>
             <div className="mainpage">
-
-
-                <nav className="navbar navbar-expand-sm sticky-top navbar-dark ">
-                    <div className="container">
-                        <button className="clg1">SYLLOGIC'23</button>
-                    </div>
-                </nav>
-
-
-
-
-                <div className="clgname" >
-                    <div className="row">
-
-
-                        <div className="col-3">
-                            <img src={kec} className="keclogo" alt="no"></img>
-                        </div>
-
-                        <div className="col-6">
-                            <h2 className="clg" >Kongu Engineering College</h2>
-                        </div>
-
-
-                    </div>
-                    <div className="clg2">
-                        <div className="row">
-
-                            <div col-12>
-                                <h6 className="clg1" >Affilated to Anna Ubiversity || Accrediated by NAAC with A++ grade</h6>
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <div className="clg2">
-                        <div className="row">
-
-                            <div col-12>
-                                <h6 className="clg1" >Perundurai Erode-638060 TamilNadu</h6>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-
+                <Navbar expand="lg" fixed="top" >
+                    <p className="navbrand">
+                       <Link to="/">
+                        <Navbar.Brand className="navbrand1">SYLLOGIC 2K23</Navbar.Brand>
+                        <img src={Logo} alt="Logo" className="logo1"/>
+                        </Link>
+                    </p>
+                </Navbar>
+            
                 <div>
                     <a href="#event">
                         <div className='scrolldown'>
                             <div className="chevrons">
                                 <div className='chevrondown'></div>
-
                                 <div className='chevrondown'></div>
                             </div>
                         </div>
                     </a>
                 </div>
-
-
-
-
-
-
             </div>
 
+            {/*-------------------------------- Event page-------------------------------- */}
             <div id="event" className="events">
                 <section className="dark">
                     <div className="container py-4">
@@ -111,7 +65,7 @@ export default function Mainpage() {
                                     {/* <a href="#"> */}
                                     Non technical events</h3>
                                 <div className="postcard__subtitle small">
-                                    <time datetime="2020-05-25 12:00:00">
+                                    <time dateTime="2020-05-25 12:00:00">
                                         <i className="fas fa-calendar-alt mr-2"></i>ALL TIME
                                     </time>
                                 </div>
