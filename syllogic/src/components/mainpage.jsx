@@ -42,7 +42,7 @@ export default function Mainpage() {
                 </div>
 
 
-                  <Navbar fixed="bottom" >
+                  <Navbar className="ml-3" fixed="bottom" >
                     
 
                         {/* <a id="b2t" style={{ display: "none" }} href="#top" className="back">go top</a> */}
