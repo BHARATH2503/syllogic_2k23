@@ -215,6 +215,32 @@ div.page1 {
   height: max-content;
 
 }
+.contact{
+  height:max-content;
+ margin-top: 3%;
+ margin-bottom: 3%;
+ padding: 5%;
+  
+}
+.frame{
+  height: 400px;
+  width: 500px;
+  border-radius: 15px;
+  
+}
+.contact{
+  height:max-content;
+ margin-top: 3%;
+ margin-bottom: 3%;
+ padding: 5%;
+  
+}
+.frame{
+  height: 400px;
+  width: 500px;
+  border-radius: 15px;
+  
+}
 
 .clg1 {
   background: linear-gradient(to right, rgb(255, 189, 74), rgb(250, 230, 80));
@@ -222,9 +248,51 @@ div.page1 {
   -webkit-background-clip: text;
   color: transparent;
 }
+.clgcont {
+  background: linear-gradient(to right, rgb(255, 189, 74), rgb(250, 230, 80));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+   font-size: 30px;
+   margin-bottom: 50px;
+}
+.clgcont1{
+  font-style: italic;
+}
+.coname{
+  font-size: 15px;
+}
 
 
+.back{
+  position: fixed-bottom;
+}
+.socialimg{
+  height: 45px;
+  width: 50px;
+ 
+  
+}
+.social1img{
+  height: 50px;
+  width: 50px;
+ 
 
+  
+}
+.social{
+  padding-left: 5%;
+}
+
+.social1t{
+  padding-right: 5%;
+
+}
+.conus{
+ font-size: 1px;
+
+
+}
 
 
 
@@ -288,5 +356,30 @@ div.page1 {
   div.events {
     height: auto;
   }
-
+  .frame{
+    height: 300px;
+    width: 300px;
+    
+    
+  }
+  .social{
+    height: 15px;
+    width: 15px;
+    font-size: 10px;
+    
+  }
+  .social1{
+    height: 15px;
+    width: 15px;
+    font-size: 10px;
+    
+  }
+  .clgcont1{
+    font-style: italic;
+    font-size: 15px;
+  }
+  .coname{
+    font-size: 10px;
+  }
+  
 }
