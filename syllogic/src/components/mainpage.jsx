@@ -2,6 +2,7 @@ import React from "react";
 import '../css/mainpage.css'
 import '../css/destin.scss'
 import Logo from '../assets/chemlogo2.png'
+import "../assets/js/back2top.js"
 
 import { Navbar } from 'react-bootstrap';
 import kec from "../assets/kec.png";
@@ -39,6 +40,17 @@ export default function Mainpage() {
                         </p>
                     </Navbar>
                 </div>
+
+
+                  <Navbar fixed="bottom" >
+                    
+
+                        {/* <a id="b2t" style={{ display: "none" }} href="#top" className="back">go top</a> */}
+                         <a href="#top">  <button id="b2t" style={{ display: "none" }} class="noselect"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" /></svg></button>
+
+                        </a>  
+                    
+                 </Navbar> 
 
                 {/*------------------- kec name-------------------------- */}
 
@@ -140,16 +152,17 @@ export default function Mainpage() {
 
             {/* upcoming events */}
 
-          
-                <div className="video">
 
-                    <b className="clgcont">UPCOMING EVENT</b>
+            <div className="container">
 
-                    <iframe className="framev" src="https://www.youtube.com/embed/sCpRzUfzi4s?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <b className="clgcont">UPCOMING EVENT</b>
+                <br />
+                <iframe className="framev" src="https://www.youtube.com/embed/sCpRzUfzi4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-                </div>
 
-        
+            </div>
+
+
 
 
 
@@ -171,7 +184,7 @@ export default function Mainpage() {
 
                 <div className="row mt-5">
                     <b className="clgcont">STAFF COORDINATORS</b>
-                    <div className="col-lg-4 col-md-3">
+                    <div className="col-lg-4 col-md-3 mt-3">
                         <img className="staffs" src={sc1} alt="" />
                         <br></br>
 
@@ -184,7 +197,7 @@ export default function Mainpage() {
                         <img className="staffs" src={sc2} alt="" />
                         <br></br>
                         <small className="clg1">S. MOTHIL <br></br>
-                            Assistant Professor 
+                            Assistant Professor
                             Departmnt of Chemical Engineering</small>
 
 
@@ -193,7 +206,7 @@ export default function Mainpage() {
                         <img className="staffs" src={sc3} alt="" />
                         <br></br>
                         <small className="clg1">T. SATHISH<br></br>
-                        Assistant Professor
+                            Assistant Professor
                             Departmnt of Chemical Engineering</small>
 
                     </div>
@@ -233,7 +246,7 @@ export default function Mainpage() {
                             <div className="col-6" >
 
 
-                                <a href="syllogic2023@gmail.com" className="social1">
+                                <a href="mailto:syllogic2023@gmail.com" className="social1">
                                     <img className="social1img" src={mail} alt="" />
                                     <br />
                                     <small className="clg1">
@@ -280,13 +293,6 @@ export default function Mainpage() {
 
 
 
-            <Navbar expand="lg" fixed="bottom" >
-                <p className="navbrand">
-
-                    <a href="#top" className="back">go top</a>
-
-                </p>
-            </Navbar>
 
 
 
