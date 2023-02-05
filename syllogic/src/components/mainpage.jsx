@@ -97,7 +97,7 @@ export default function Mainpage() {
                                 <div className="postcard__bar"></div>
                                 <div className="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
                                 <ul className="postcard__tagbox">
-                                    <Link to={`/explore/636123156cb6d9edd1201e5b`}><button className="button1">Register</button></Link>
+                                    <Link to={`/tech`}><button className="button1">Register</button></Link>
                                 </ul>
                             </div>
                         </article>
@@ -117,7 +117,7 @@ export default function Mainpage() {
                                 <div className="postcard__bar"></div>
                                 <div className="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
                                 <ul className="postcard__tagbox">
-                                    <Link to={`/explore/636140c29766fa1d74e76d3f`}><button className="button1">Register</button></Link>
+                                    <Link to={`/nontech`}><button className="button1">Register</button></Link>
                                 </ul>
                             </div>
                         </article>
