@@ -3,9 +3,10 @@ import '../css/mainpage.css'
 import '../css/destination.css'
 import '../css/destin.scss'
 import Logo from '../assets/chemlogo2.png'
-import {Navbar} from 'react-bootstrap';
+import {FaTwitter ,FaInstagram,FaLocationArrow,FaVoicemail} from 'react-icons/fa'
+import { Navbar } from 'react-bootstrap';
 // import kec from "../assets/kec.png";
-import '../css/hero.css'
+
 
 import kec from "../assets/kec.png"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -13,16 +14,16 @@ import { Link } from "react-router-dom";
 export default function Mainpage() {
     return (
         <>
-            <div className="mainpage">
+            <div id="top" className="mainpage">
                 <Navbar expand="lg" fixed="top" >
                     <p className="navbrand">
-                       <Link to="/">
-                        <Navbar.Brand className="navbrand1">SYLLOGIC 2K23</Navbar.Brand>
-                        <img src={Logo} alt="Logo" className="logo1"/>
+                        <Link to="/">
+                            <Navbar.Brand className="navbrand1">SYLLOGIC 2K23</Navbar.Brand>
+                            <img src={Logo} alt="Logo" className="logo1" />
                         </Link>
                     </p>
                 </Navbar>
-            
+
                 <div>
                     <a href="#event">
                         <div className='scrolldown'>
@@ -35,7 +36,7 @@ export default function Mainpage() {
                 </div>
             </div>
 
-            {/*-------------------------------- Event page-------------------------------- */}
+            
             <div id="event" className="events">
                 <section className="dark">
                     <div className="container py-4">
@@ -88,60 +89,51 @@ export default function Mainpage() {
 
             {/* contact */}
 
-            {/* <div className="contact">
+            <div className="contact">
 
                 <div className="row">
 
-                    <div className="col-12 mt-5">
-                        <img src="https://lh3.googleusercontent.com/aXMdHIDlOz3EcYrfJfHjhfNh2FmIXpmsE2-GmsLHj-2CSWTaobxJ-9u6OkODqLMwUE3O4BDAIURQfhEFNTo3BRw=w1280" alt="" />
-                        <h2>kanni</h2>
+                    <div className="col-6">
+
+                      <div className="row">
+                        <FaLocationArrow/>
+                        <h4>location</h4>
+
+                      </div>
+
+                      <div className="row">
+                        <FaVoicemail/>
+                        <h4>email</h4>
+
+                      </div>
+                      <div className="row">
+                        <FaInstagram></FaInstagram>
+                        <h4>instagram</h4>
+
+                      </div>
+                      <div className="row">
+                      <FaTwitter className='icon' ></FaTwitter>
+                      
+                        
+
+                      </div>
+
+
+
                     </div>
-                </div>
-                <div className="row mt-5">
+                    <div className="col-6">
 
-                    <div className="col-4">
-                        <h2>periasamy</h2>
-
-                    </div>
-                    <div className="col-4">
-                        <h2>sakthish</h2>
-
-                    </div>
-                    <div className="col-4">
-                        <h2>mona</h2>
-
-                    </div>
-
-                </div>
-
-            </div> */}
-            <div className='hero'>
-                <div className='content'>
-                    <div className="row">
-
-                        <div className="col-12 mt-5">
-                            <img src="https://lh3.googleusercontent.com/aXMdHIDlOz3EcYrfJfHjhfNh2FmIXpmsE2-GmsLHj-2CSWTaobxJ-9u6OkODqLMwUE3O4BDAIURQfhEFNTo3BRw=w1280" alt="" />
-                            <h2>kanni</h2>
-                        </div>
-                    </div>
-                    <div className="row mt-5">
-
-                        <div className="col-4">
-                            <h2>periasamy</h2>
-
-                        </div>
-                        <div className="col-4">
-                            <h2>sakthish</h2>
-
-                        </div>
-                        <div className="col-4">
-                            <h2>mona</h2>
-
+                        <div className="map">
+                        <iframe className="frame" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" ></iframe>
+                            
                         </div>
 
                     </div>
                 </div>
-
+                <a href="#top">go top</a>
+               
+                            
+                           
             </div>
 
 
