@@ -8,9 +8,9 @@ export default function Home() {
         <>
             <div className="full1">
 
-                <div className="wrapper">
-                    <div className="bg"> Syllogic 2k23 </div>
-                    <div className="fg">Syllogic 2k23 </div>
+                <div className="wrapper ">
+                    <div className="bg wrappertext"> Syllogic 2k23 </div>
+                    <div className="fg  wrappertext">Syllogic 2k23 </div>
                 </div>
 
                 <div className="overlay"></div>

@@ -1,11 +1,12 @@
 import React from "react";
 import '../css/mainpage.css'
-import '../css/destination.css'
 import '../css/destin.scss'
 import Logo from '../assets/chemlogo2.png'
-import {FaTwitter ,FaInstagram,FaLocationArrow,FaVoicemail} from 'react-icons/fa'
-import {  Navbar  } from 'react-bootstrap';
+
+import { Navbar } from 'react-bootstrap';
 import kec from "../assets/kec.png";
+import mail from "../assets/gmail.png";
+import insta from "../assets/instagram.png";
 import chem from "../assets/chemlogo.jpg";
 
 
@@ -22,11 +23,12 @@ export default function Mainpage() {
         <>
             <div className="page1">
                 <div className="mainpage">
-                    <Navbar expand="lg" fixed="top" >
+                    <Navbar expand="lg" className="ms-4 " fixed="top" >
                         <p className="navbrand">
-                            <Link to="/">
-                                <Navbar.Brand className="navbrand1">SYLLOGIC 2K23</Navbar.Brand>
-                                <img src={Logo} alt="Logo" className="logo1" />
+                            <Link to="/" className="d-flex">
+                                <img src={chem} alt="Chem" className="chemlogo me-2" />
+                                <h2 className="navbrand1">SYLLOGIC 2K23</h2>
+                                <img src={Logo} alt="Logo" className="logo1  ms-2" />
                             </Link>
                         </p>
                     </Navbar>
@@ -36,36 +38,39 @@ export default function Mainpage() {
 
                 <div className="kecname">
                     <Container>
-                        <Row className="logoside">
+                        <Row>
                             <Row>
-                                <pre>
+                                <pre className="cname">
                                     <Col className="cname">
                                         <img src={kec} alt="Transform Yourself" className="ilogo" />
                                         Kongu Engineering College</Col>
                                 </pre>
                             </Row>
-                            <Row className="rank" style={{marginTop:"-2%"}}>
+                            <Row className="rank" style={{ marginTop: "-2%" }}>
                                 <Col sm={12}>Affilated to Anna University || Accrediated by NAAC with A++ grade</Col>
                                 <Col sm={12}>Perundurai Erode-638060 TamilNadu</Col>
+                            </Row>
+
+                       
+                        </Row>
+                    </Container>
+                </div>
+
+
+                <div className="chemname">
+                    <Container>
+                        <Row>
+                            <Row>
+                                <Col className="chass">Indian Institute Of Chemical Engineering</Col>
+                            </Row>
+                            <Row>
+                                <Col sm={12} className="chemdep">Chemical Engineering Association</Col>
+                                <Col sm={12} className="present">Presents</Col>
                             </Row>
 
                         </Row>
                     </Container>
                 </div>
-
-                {/*-------------------chemical dept name-------------------------- */}
-                <div className="chemname">
-                    <Container>
-                        <Row sm={12}>
-                            <Col sm={12} className="dir">
-                                <img src={chem} alt="Chem" className="chemlogo" />
-                                <h5 className="chemdep">Department Of Chemical Engineering</h5>
-                            </Col>
-                        </Row>
-                    </Container>
-                </div>
-
-
                 <div>
                     <a href="#event">
                         <div className='scrolldown'>
@@ -129,53 +134,126 @@ export default function Mainpage() {
 
 
             {/* contact */}
+            <div className="images">
+
+                <b className="clgcont">DEPT HOD</b>
+
+                <div className="row  ">
+                    <div className="col-lg-12 col-md-3">
+                        <img src={kec} alt="" />
+
+                    </div>
+                    </div>
+                    
+                    <div className="row mt-5">
+                    <b className="clgcont">STAFF COORDINATORS</b>
+                    <div className="col-lg-4 col-md-3">
+                    <img src={kec} alt="" />
+
+                    </div>
+                    <div className="col-lg-4 col-md-3">
+                    <img src={kec} alt="" />
+
+                    </div>
+                    <div className="col-lg-4 col-md-3">
+                    <img src={kec} alt="" />
+
+                    </div>
+
+                </div>
+
+            </div>
 
             <div className="contact">
-
                 <div className="row">
 
-                    <div className="col-6">
 
-                      <div className="row">
-                        <FaLocationArrow/>
-                        <h4>location</h4>
+                    <div className="col-lg-6 col-md-12 p-5">
 
-                      </div>
+                        <div className="row">
 
-                      <div className="row">
-                        <FaVoicemail/>
-                        <h4>email</h4>
+                       
 
-                      </div>
-                      <div className="row">
-                        <FaInstagram></FaInstagram>
-                        <h4>instagram</h4>
+                        <div className="conus">
+                            <b  className="clgcont">CONTACT US</b>
+                            <h3  className="clgcont1" > student coordinators</h3>
 
-                      </div>
-                      <div className="row">
-                      <FaTwitter className='icon' ></FaTwitter>
-                      
-                        
-
-                      </div>
+                            <h5 className="coname">Mr B.Charan - +91 94447 70517</h5>
+                            <h5 className="coname">Mr R.Deenadhayalan - +91 99940 41738</h5>
 
 
 
-                    </div>
-                    <div className="col-6">
-
-                        <div className="map">
-                        <iframe className="frame" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" ></iframe>
-                            
+                        </div>
                         </div>
 
+                        <div className="row mt-5">
+
+
+
+
+
+                            <div className="col-6" >
+
+
+                                <a href="syllogic2023@gmail.com" className="social1">
+                                    <img className="social1img" src={mail} alt="" />
+                                    <br />
+                                    <small className="clg1">
+                                        syllogic2023@gmail.com
+                                    </small>
+                                </a>
+
+                            </div>
+                            <div className="col-6" >
+                                <a className="social" href="https://www.instagram.com/kec_chem_official/?igshid=YmMyMTA2M2Y%3D">
+                                    <img className="socialimg" src={insta} alt="" />
+                                    <br />
+                                    <small className="clg1">
+                                        CEA
+                                    </small>
+
+                                </a>
+
+
+                            </div>
+
+                        </div>
                     </div>
+
+                    <div className="col-lg-6 col-md-6">
+
+
+                    <iframe className="frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.826470171063!2d77.60483861480529!3d11.27416319198491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96d7810fe32d5%3A0x85cf49c5b26fb72e!2sKongu%20Engineering%20College!5e0!3m2!1sen!2sin!4v1675595314904!5m2!1sen!2sin"
+                     ></iframe>
+
+
+
+                    </div>
+
                 </div>
-                <a href="#top">go top</a>
-               
-                            
-                           
+
+
+
+
+
             </div>
+
+
+
+
+
+            <Navbar expand="lg" fixed="bottom" >
+                <p className="navbrand">
+
+                    <a href="#top" className="back">go top</a>
+
+                </p>
+            </Navbar>
+
+
+
+
+
 
 
 

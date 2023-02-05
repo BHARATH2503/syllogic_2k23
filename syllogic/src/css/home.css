@@ -18,6 +18,18 @@
   /* height: 30vh; */
   margin-bottom: 5%;
 }
+.wrappertext{
+  background: linear-gradient(to right, rgb(244, 173, 50), rgb(55, 54, 54));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientAnim 2s ease alternate infinite;
+}
+@keyframes gradientAnim {
+  to {
+    background-position: 100% top;
+  }
+}
 
 .wrapper>div {
 
