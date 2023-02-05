@@ -47,11 +47,11 @@ export default function Mainpage() {
                                 </pre>
                             </Row>
                             <Row className="rank" style={{ marginTop: "-2%" }}>
-                            <Row className="rank" style={{ marginTop: "-2%" }}>
                                 <Col sm={12}>Affilated to Anna University || Accrediated by NAAC with A++ grade</Col>
                                 <Col sm={12}>Perundurai Erode-638060 TamilNadu</Col>
                             </Row>
 
+                       
                         </Row>
                     </Container>
                 </div>
