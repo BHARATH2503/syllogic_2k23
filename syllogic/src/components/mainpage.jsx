@@ -3,8 +3,8 @@ import '../css/mainpage.css'
 import '../css/destination.css'
 import '../css/destin.scss'
 import Logo from '../assets/chemlogo2.png'
-import {FaTwitter ,FaInstagram,FaLocationArrow,FaVoicemail} from 'react-icons/fa'
-import {  Navbar  } from 'react-bootstrap';
+import { FaTwitter, FaInstagram, FaLocationArrow, FaVoicemail } from 'react-icons/fa'
+import { Navbar } from 'react-bootstrap';
 import kec from "../assets/kec.png";
 import chem from "../assets/chemlogo.jpg";
 
@@ -22,11 +22,12 @@ export default function Mainpage() {
         <>
             <div className="page1">
                 <div className="mainpage">
-                    <Navbar expand="lg" fixed="top" >
+                    <Navbar expand="lg" className="ms-4 " fixed="top" >
                         <p className="navbrand">
-                            <Link to="/">
-                                <Navbar.Brand className="navbrand1">SYLLOGIC 2K23</Navbar.Brand>
-                                <img src={Logo} alt="Logo" className="logo1" />
+                            <Link to="/" className="d-flex">
+                                <img src={chem} alt="Chem" className="chemlogo me-2" />
+                                <h2 className="navbrand1">SYLLOGIC 2K23</h2>
+                                <img src={Logo} alt="Logo" className="logo1  ms-2" />
                             </Link>
                         </p>
                     </Navbar>
@@ -36,15 +37,15 @@ export default function Mainpage() {
 
                 <div className="kecname">
                     <Container>
-                        <Row className="logoside">
+                        <Row>
                             <Row>
-                                <pre>
+                                <pre className="cname">
                                     <Col className="cname">
                                         <img src={kec} alt="Transform Yourself" className="ilogo" />
                                         Kongu Engineering College</Col>
                                 </pre>
                             </Row>
-                            <Row className="rank" style={{marginTop:"-2%"}}>
+                            <Row className="rank" style={{ marginTop: "-2%" }}>
                                 <Col sm={12}>Affilated to Anna University || Accrediated by NAAC with A++ grade</Col>
                                 <Col sm={12}>Perundurai Erode-638060 TamilNadu</Col>
                             </Row>
@@ -53,19 +54,21 @@ export default function Mainpage() {
                     </Container>
                 </div>
 
-                {/*-------------------chemical dept name-------------------------- */}
+
                 <div className="chemname">
                     <Container>
-                        <Row sm={12}>
-                            <Col sm={12} className="dir">
-                                <img src={chem} alt="Chem" className="chemlogo" />
-                                <h5 className="chemdep">Department Of Chemical Engineering</h5>
-                            </Col>
+                        <Row>
+                            <Row>
+                                <Col className="chass">Indian Institute Of Chemical Engineering</Col>
+                            </Row>
+                            <Row>
+                                <Col sm={12} className="chemdep">Chemical Engineering Association</Col>
+                                <Col sm={12} className="present">Presents</Col>
+                            </Row>
+
                         </Row>
                     </Container>
                 </div>
-
-
                 <div>
                     <a href="#event">
                         <div className='scrolldown'>
@@ -136,28 +139,28 @@ export default function Mainpage() {
 
                     <div className="col-6">
 
-                      <div className="row">
-                        <FaLocationArrow/>
-                        <h4>location</h4>
+                        <div className="row">
+                            <FaLocationArrow />
+                            <h4>location</h4>
 
-                      </div>
+                        </div>
 
-                      <div className="row">
-                        <FaVoicemail/>
-                        <h4>email</h4>
+                        <div className="row">
+                            <FaVoicemail />
+                            <h4>email</h4>
 
-                      </div>
-                      <div className="row">
-                        <FaInstagram></FaInstagram>
-                        <h4>instagram</h4>
+                        </div>
+                        <div className="row">
+                            <FaInstagram></FaInstagram>
+                            <h4>instagram</h4>
 
-                      </div>
-                      <div className="row">
-                      <FaTwitter className='icon' ></FaTwitter>
-                      
-                        
+                        </div>
+                        <div className="row">
+                            <FaTwitter className='icon' ></FaTwitter>
 
-                      </div>
+
+
+                        </div>
 
 
 
@@ -165,16 +168,16 @@ export default function Mainpage() {
                     <div className="col-6">
 
                         <div className="map">
-                        <iframe className="frame" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" ></iframe>
-                            
+                            {/* <iframe className="frame" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" ></iframe> */}
+
                         </div>
 
                     </div>
                 </div>
                 <a href="#top">go top</a>
-               
-                            
-                           
+
+
+
             </div>
 
 
