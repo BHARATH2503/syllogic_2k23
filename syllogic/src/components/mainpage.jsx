@@ -55,8 +55,8 @@ export default function Mainpage() {
                 </div>
 
 
-                <Navbar fixed="bottom" >
-
+                  <Navbar className="ml-3" fixed="bottom" >
+                    
 
                     {/* <a id="b2t" style={{ display: "none" }} href="#top" className="back">go top</a> */}
                     <a href="#top">  <button id="b2t" style={{ display: "none" }} class="noselect"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" /></svg></button>
@@ -74,7 +74,7 @@ export default function Mainpage() {
                                 <pre className="cname">
                                     <Col className="cname">
                                         <img src={kec} alt="Transform Yourself" className="ilogo" />
-                                        Kongu Engineering College</Col>
+                                        <small>Kongu Engineering College</small></Col>
                                 </pre>
                             </Row>
                             <Row className="rank" style={{ marginTop: "-2%" }}>
@@ -199,7 +199,7 @@ export default function Mainpage() {
 
                 <b className="clgcont">UPCOMING EVENT</b>
                 <br />
-                <iframe className="framev" src="https://www.youtube.com/embed/sCpRzUfzi4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe className="framev w-100" src="https://www.youtube.com/embed/sCpRzUfzi4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
             </div>

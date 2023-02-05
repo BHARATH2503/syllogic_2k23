@@ -36,7 +36,7 @@ export default function Nontech() {
                                     </div>
                                 </div>
                                 <div>
-                                    <button className="btn" id="but1">Register</button>
+                                    <button className="btn" id="d1">Register</button>
                                 </div>
                             </div>
                         </div>
@@ -53,7 +53,7 @@ export default function Nontech() {
                                     </div>
                                 </div>
                                 <div>
-                                    <button className="btn" id="but1">Register</button>
+                                    <button className="btn" id="d1">Register</button>
                                 </div>
                             </div>
                         </div>
@@ -70,7 +70,7 @@ export default function Nontech() {
                                     </div>
                                 </div>
                                 <div>
-                                    <button className="btn" id="but1">Register</button>
+                                    <button className="btn" id="d1">Register</button>
                                 </div>
                             </div>
                         </div>

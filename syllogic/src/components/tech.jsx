@@ -8,11 +8,14 @@ import { Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import ppimg from "../assets/ppimg.jpg";
+import ppimg1 from "../assets/ppimg1.jpg";
 
 export default function Tech() {
     return (
         <>
             <div className="mainpage">
+
                 <Navbar expand="lg" className="ms-4" >
                     <p className="navbrand">
                         <Link to="/home" className="d-flex">
@@ -22,6 +25,54 @@ export default function Tech() {
                         </Link>
                     </p>
                 </Navbar>
+                    <Navbar expand="lg" fixed="top" >
+                        <p className="navbrand">
+                            <Link to="/">
+                                <Navbar.Brand className="navbrand1">SYLLOGIC 2K23</Navbar.Brand>
+                                <img src={Logo} alt="Logo" className="logo1" />
+                            </Link>
+                        </p>
+                    </Navbar>
+                </div>
+            <h1 id="pageHeaderTitle" className="techheader">Technical events</h1>
+            <div className='div1'>
+                <ul class="cards">
+                    <li style={{ marginLeft: "50px" }}>
+                        <div class="card">
+                            <img src={ppimg} class="card__image" alt="" />
+                            <div class="card__overlay">
+                                <div class="card__header">
+                                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                                    {/* <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" /> */}
+                                    <div class="card__header-text">
+                                        <h3 class="card__title" >Paper Presentation</h3>
+
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <Link to={`/paper`}><button className="btn" id="d1">Details</button></Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style={{ marginLeft: "50px" }}>
+                            <div class="card">
+                                <img src={ppimg1} class="card__image" alt="" />
+                                <div class="card__overlay">
+                                    <div class="card__header">
+                                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                                        <div class="card__header-text">
+                                            <h3 class="card__title">Poster Presentation</h3>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <Link to={`/poster`}><button className="btn" id="d1">Details</button></Link>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <div className="tech">
                 <h1 id="pageHeaderTitle" className="techheader">Technical events</h1>
@@ -54,16 +105,17 @@ export default function Tech() {
                                         <div class="card__header-text">
                                             <h3 class="card__title">Poster</h3>
 
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <button className="btn" id="but1">Register</button>
                                     </div>
                                 </div>
+                                <div>
+                                    <Link to={`/poster`}><button className="btn" id="d1">Details</button></Link>
+                                </div>
                             </div>
-                        </li>
-                    </ul>
-                </div>
-            </div></>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
     )
 }

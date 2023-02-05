@@ -6,6 +6,8 @@ import Mainpage from './components/mainpage';
 import Tech from './components/tech';
 import Nontech from './components/nontech';
 import Gallery from './components/gallery';
+import Paper from './components/events/paper';
+import Poster from './components/events/poster';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path='/tech' element={<Tech/>}/>
         <Route path='/nontech' element={<Nontech/>}/>
         <Route path='/gallery' element={<Gallery/>}/>
+        <Route path='/paper' element={<Paper/>}/>
+        <Route path='/poster' element={<Poster/>}/>
       </Routes>
       </BrowserRouter>
     </div>
