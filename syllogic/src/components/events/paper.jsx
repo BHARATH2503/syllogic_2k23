@@ -23,7 +23,7 @@ export default function Paper(){
          </div>
          <div className='col-lg-6 my-auto' id='reg'>
             <h3 className='hhh'>Registration link</h3>
-            <a href=""><button class="btn btn-warning mt-3">Register</button></a>
+            <a href=""><button class="btn btn-warning mt-3" id='bb'>Register</button></a>
         </div>
         </div></div>
     </div>

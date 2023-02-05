@@ -61,7 +61,7 @@ export default function Mainpage() {
                                 <pre className="cname">
                                     <Col className="cname">
                                         <img src={kec} alt="Transform Yourself" className="ilogo" />
-                                        Kongu Engineering College</Col>
+                                        <small>Kongu Engineering College</small></Col>
                                 </pre>
                             </Row>
                             <Row className="rank" style={{ marginTop: "-2%" }}>
@@ -157,7 +157,7 @@ export default function Mainpage() {
 
                 <b className="clgcont">UPCOMING EVENT</b>
                 <br />
-                <iframe className="framev" src="https://www.youtube.com/embed/sCpRzUfzi4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe className="framev w-100" src="https://www.youtube.com/embed/sCpRzUfzi4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
             </div>

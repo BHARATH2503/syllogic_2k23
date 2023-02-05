@@ -81,7 +81,6 @@
     gap: 2em;
     padding: 2em;
     border-radius: calc(var(--curve) * 1px) 0 0 0;    
-    /* background-color: var(--surface-color); */
     background-color: black;
     transform: translateY(-100%);
     transition: .2s ease-in-out;
@@ -134,7 +133,7 @@
   .card__description {
     padding: 0 2em 2em;
     margin: 0;
-    color: #D7BDCA;
+    color: #ffffff;
     font-family: "MockFlowFont";   
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -142,24 +141,23 @@
     overflow: hidden;
   }    
 
-  #but1 {
-    margin-bottom: 20px;
-        /* min-width: 30px;
-        min-height: 60px; */
-        font-family: 'Nunito', sans-serif;
-        font-size: 15px;
-        letter-spacing: 1.3px;
-        font-weight: 700;
-        color: #313133;
-        background: rgb(254, 194, 92);
-        background: linear-gradient(to right, rgb(255, 189, 74), rgb(250, 230, 80));
-        border: none;
-        border-radius: 80px;
-        box-shadow: 8px 8px 24px rgb(255, 189, 74);
-        cursor: pointer;
-        outline: none;
-        position: relative;
-        padding: 10px;
+  #d1 {
+      margin-bottom: 20px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+      color: #313133;
+      background: rgb(254, 194, 92);
+      background: linear-gradient(to right, rgb(255, 189, 74), rgb(250, 230, 80));
+      border: none;
+      border-radius: 80px;
+      box-shadow: 4px 5px 20px rgb(255, 189, 74);
+      cursor: pointer;
+      outline: none;
+      position: relative;
+      padding: 10px;
+      height: fit-content;
   }
 
   .list{

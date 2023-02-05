@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import ppimg from "../assets/ppimg.jpg";
+import ppimg1 from "../assets/ppimg1.jpg";
 
 export default function Tech() {
     return (
@@ -27,7 +29,7 @@ export default function Tech() {
                 <ul class="cards">
                     <li style={{ marginLeft: "50px" }}>
                         <div class="card">
-                            <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
+                            <img src={ppimg} class="card__image" alt="" />
                             <div class="card__overlay">
                                 <div class="card__header">
                                     <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
@@ -38,14 +40,14 @@ export default function Tech() {
                                     </div>
                                 </div>
                                 <div>
-                                    <Link to={`/paper`}><button className="btn" id="but1">Details</button></Link>
+                                    <Link to={`/paper`}><button className="btn" id="d1">Details</button></Link>
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li style={{ marginLeft: "50px" }}>
                         <div class="card">
-                            <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
+                            <img src={ppimg1} class="card__image" alt="" />
                             <div class="card__overlay">
                                 <div class="card__header">
                                     <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
@@ -55,7 +57,7 @@ export default function Tech() {
                                     </div>
                                 </div>
                                 <div>
-                                    <Link to={`/poster`}><button className="btn" id="but1">Details</button></Link>
+                                    <Link to={`/poster`}><button className="btn" id="d1">Details</button></Link>
                                 </div>
                             </div>
                         </div>
