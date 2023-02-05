@@ -42,7 +42,7 @@ export default function Mainpage() {
                 </div>
 
 
-                  <Navbar fixed="bottom" >
+                  <Navbar className="ml-3" fixed="bottom" >
                     
 
                         {/* <a id="b2t" style={{ display: "none" }} href="#top" className="back">go top</a> */}
@@ -157,7 +157,7 @@ export default function Mainpage() {
 
                 <b className="clgcont">UPCOMING EVENT</b>
                 <br />
-                <iframe className="framev" src="https://www.youtube.com/embed/sCpRzUfzi4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe className="framev w-100" src="https://www.youtube.com/embed/sCpRzUfzi4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
             </div>
