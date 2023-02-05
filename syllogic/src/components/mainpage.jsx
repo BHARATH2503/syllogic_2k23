@@ -4,25 +4,67 @@ import '../css/destination.css'
 import '../css/destin.scss'
 import Logo from '../assets/chemlogo2.png'
 import {FaTwitter ,FaInstagram,FaLocationArrow,FaVoicemail} from 'react-icons/fa'
-import { Navbar } from 'react-bootstrap';
-// import kec from "../assets/kec.png";
+import {  Navbar  } from 'react-bootstrap';
+import kec from "../assets/kec.png";
+import chem from "../assets/chemlogo.jpg";
 
 
-import kec from "../assets/kec.png"
+
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Link } from "react-router-dom";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+
 export default function Mainpage() {
     return (
         <>
-            <div id="top" className="mainpage">
-                <Navbar expand="lg" fixed="top" >
-                    <p className="navbrand">
-                        <Link to="/">
-                            <Navbar.Brand className="navbrand1">SYLLOGIC 2K23</Navbar.Brand>
-                            <img src={Logo} alt="Logo" className="logo1" />
-                        </Link>
-                    </p>
-                </Navbar>
+            <div className="page1">
+                <div className="mainpage">
+                    <Navbar expand="lg" fixed="top" >
+                        <p className="navbrand">
+                            <Link to="/">
+                                <Navbar.Brand className="navbrand1">SYLLOGIC 2K23</Navbar.Brand>
+                                <img src={Logo} alt="Logo" className="logo1" />
+                            </Link>
+                        </p>
+                    </Navbar>
+                </div>
+
+                {/*------------------- kec name-------------------------- */}
+
+                <div className="kecname">
+                    <Container>
+                        <Row className="logoside">
+                            <Row>
+                                <pre>
+                                    <Col className="cname">
+                                        <img src={kec} alt="Transform Yourself" className="ilogo" />
+                                        Kongu Engineering College</Col>
+                                </pre>
+                            </Row>
+                            <Row className="rank" style={{marginTop:"-2%"}}>
+                                <Col sm={12}>Affilated to Anna University || Accrediated by NAAC with A++ grade</Col>
+                                <Col sm={12}>Perundurai Erode-638060 TamilNadu</Col>
+                            </Row>
+
+                        </Row>
+                    </Container>
+                </div>
+
+                {/*-------------------chemical dept name-------------------------- */}
+                <div className="chemname">
+                    <Container>
+                        <Row sm={12}>
+                            <Col sm={12} className="dir">
+                                <img src={chem} alt="Chem" className="chemlogo" />
+                                <h5 className="chemdep">Department Of Chemical Engineering</h5>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+
 
                 <div>
                     <a href="#event">
@@ -35,8 +77,7 @@ export default function Mainpage() {
                     </a>
                 </div>
             </div>
-
-            
+            {/*-------------------------------- Event page-------------------------------- */}
             <div id="event" className="events">
                 <section className="dark">
                     <div className="container py-4">
