@@ -16,6 +16,9 @@ import mail from "../assets/gmail.png";
 import insta from "../assets/instagram.png";
 import chem from "../assets/chemlogo.jpg";
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -26,35 +29,45 @@ import Col from 'react-bootstrap/Col';
 
 
 export default function Mainpage() {
+    const settings = {
+        fade: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+    };
+
     return (
         <>
             <div className="page1">
                 <div className="mainpage">
-                    <Navbar expand="lg" className="ms-4  " fixed="top" >
-                        <p className="navbrand">
-                            <Link to="/" className="d-flex">
-                                <img src={chem} alt="Chem" className="chemlogo me-2" />
-                                <h2 className="navbrand1">SYLLOGIC 2K23</h2>
-                                <img src={Logo} alt="Logo" className="logo1  ms-2" />
-                            </Link>
-                        </p>
+                    <Navbar expand="lg" className="" fixed="top" >
+
+                        <Link to="/" className="w-100 d-flex justify-content-center">
+                            <img src={chem} alt="Chem" className="chemlogo me-2" />
+                            <h2 className="navbrand1">SYLLOGIC 2K23</h2>
+                            <img src={Logo} alt="Logo" className="logo1  ms-2" />
+                        </Link>
+
                     </Navbar>
                 </div>
 
 
-                  <Navbar fixed="bottom" >
-                    
+                <Navbar fixed="bottom" >
 
-                        {/* <a id="b2t" style={{ display: "none" }} href="#top" className="back">go top</a> */}
-                         <a href="#top">  <button id="b2t" style={{ display: "none" }} class="noselect"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" /></svg></button>
 
-                        </a>  
-                    
-                 </Navbar> 
+                    {/* <a id="b2t" style={{ display: "none" }} href="#top" className="back">go top</a> */}
+                    <a href="#top">  <button id="b2t" style={{ display: "none" }} class="noselect"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" /></svg></button>
+
+                    </a>
+
+                </Navbar>
 
                 {/*------------------- kec name-------------------------- */}
 
-                <div className="kecname">
+                <div className="kecname mt-0 pt-5">
                     <Container>
                         <Row>
                             <Row>
@@ -73,10 +86,8 @@ export default function Mainpage() {
                         </Row>
                     </Container>
                 </div>
-
-
                 <div className="chemname">
-                    <Container>
+                    <Container >
                         <Row>
                             <Row>
                                 <Col className="chass">Indian Institute Of Chemical Engineering</Col>
@@ -89,17 +100,48 @@ export default function Mainpage() {
                         </Row>
                     </Container>
                 </div>
-                <div>
-                    <a href="#event">
-                        <div className='scrolldown'>
-                            <div className="chevrons">
-                                <div className='chevrondown'></div>
-                                <div className='chevrondown'></div>
-                            </div>
-                        </div>
-                    </a>
+                <div className="about">
+                    <div className="row mt-2.8" style={{ width: "100%", padding: "1% 3% 1% 3%" }}>
+
+                        {/* <Slider {...settings} className="mx-5 mt-3">
+                            <div><img className="sliderImg" src={hod}  alt="" /></div>
+                            <div><img className="sliderImg" src={mail}  alt="" /></div>
+                            <div><img className="sliderImg" src={sc2}  alt="" /></div>
+                            <div><img className="sliderImg" src={sc1}  alt="" /></div>
+                        </Slider> */}
+                       
+                            <h5 className="heading">ABOUT THE INSTITUTION</h5>
+                            <p className="para">
+                                Kongu Engineering College (KEC) was established in the year 1984. Approved by AICTE, New Delhi and affiliated to Anna University, Chennai. The Institution has completed 39 years of dedicated and excellent service in the field of technical education. It offers 14 UG, 19 PG and 16 Research programmes in Engineering, Applied Sciences and Management branches. The Institution has got NBA accreditation for UG programme, Best Engineering College award and the Best Principal Award twice. The Institution is one among the best in imparting high quality technical education in Tamil Nadu and it is ranked high among the Engineering Institutes including IITs, NITs, Central Universities by various surveys conducted by magazines such as Outlook, The Week, Competition Success Review etc. The institution has established a Technology Business Incubator (TBI) supported by Department of Science and Technology (DST) Government of India.
+                            </p>
+                            <h5 className="heading">ABOUT THE DEPARTMENT</h5>
+                            <p className="para" style={{ textAlign: "justify" }}>
+                                The Department of Chemical Engineering was started in the academic year 1994-95. It offers B.Tech, M.Tech
+                                and Ph.D degree programmes recognized by Anna University, Chennai. Besides teaching, the department is actively
+                                involved in industrial consultancy, and conducting training programmes including various sponsored seminar and
+                                workshops for students and practicing engineers. Numerous funded projects from MoEF, AICTE and UGC has been
+                                completed successfully and few are in progress. The department has advanced simulation softwares such as Fluent,
+                                HYSIS, ASPEN plus, HTRI, gPROM and PROSIM.
+                            </p>
+
+                    </div>
+
                 </div>
             </div>
+
+
+
+            <div style={{paddingBottom:"1%"}}>
+                <a href="#event">
+                    <div className='scrolldown'>
+                        <div className="chevrons">
+                            <div className='chevrondown'></div>
+                            <div className='chevrondown'></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
             {/*-------------------------------- Event page-------------------------------- */}
             <div id="event" className="events">
                 <section className="dark">

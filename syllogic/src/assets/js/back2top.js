@@ -10,3 +10,15 @@ window.onscroll=function () {
         top.style.display = "none";
     }
 }
+
+// window.onload=function(){
+//     // console.log(document.getElementsByClassName('fades'))
+//         document.getElementsByClassName('fades').slick({
+//             dots: true,
+//             infinite: true,
+//             speed: 500,
+//             fade: true,
+//             cssEase: 'linear'
+//           })
+    
+// }
