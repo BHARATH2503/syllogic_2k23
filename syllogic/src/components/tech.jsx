@@ -38,7 +38,7 @@ export default function Tech() {
                                     </div>
                                 </div>
                                 <div>
-                                    <button className="btn" id="but1">Register</button>
+                                    <Link to={`/paper`}><button className="btn" id="but1">Details</button></Link>
                                 </div>
                             </div>
                         </div>
@@ -50,12 +50,12 @@ export default function Tech() {
                                 <div class="card__header">
                                     <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
                                     <div class="card__header-text">
-                                        <h3 class="card__title">Poster</h3>
+                                        <h3 class="card__title">Poster Presentation</h3>
 
                                     </div>
                                 </div>
                                 <div>
-                                    <button className="btn" id="but1">Register</button>
+                                    <Link to={`/poster`}><button className="btn" id="but1">Details</button></Link>
                                 </div>
                             </div>
                         </div>
