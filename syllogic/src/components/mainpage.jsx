@@ -5,6 +5,12 @@ import Logo from '../assets/chemlogo2.png'
 
 import { Navbar } from 'react-bootstrap';
 import kec from "../assets/kec.png";
+import hod from "../assets/hod.jpg";
+
+import video from "../assets/hod.jpg";
+import sc1 from "../assets/sc1.jpg";
+import sc2 from "../assets/sc2.jpg";
+import sc3 from "../assets/sc3.jpg";
 import mail from "../assets/gmail.png";
 import insta from "../assets/instagram.png";
 import chem from "../assets/chemlogo.jpg";
@@ -23,7 +29,7 @@ export default function Mainpage() {
         <>
             <div className="page1">
                 <div className="mainpage">
-                    <Navbar expand="lg" className="ms-4 " fixed="top" >
+                    <Navbar expand="lg" className="ms-4  " fixed="top" >
                         <p className="navbrand">
                             <Link to="/" className="d-flex">
                                 <img src={chem} alt="Chem" className="chemlogo me-2" />
@@ -51,7 +57,7 @@ export default function Mainpage() {
                                 <Col sm={12}>Perundurai Erode-638060 TamilNadu</Col>
                             </Row>
 
-                       
+
                         </Row>
                     </Container>
                 </div>
@@ -132,31 +138,63 @@ export default function Mainpage() {
 
             </div>
 
+            {/* upcoming events */}
+
+          
+                <div className="video">
+
+                    <b className="clgcont">UPCOMING EVENT</b>
+
+                    <iframe className="framev" src="https://www.youtube.com/embed/sCpRzUfzi4s?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                </div>
+
+        
+
+
+
 
             {/* contact */}
             <div className="images">
 
-                <b className="clgcont">DEPT HOD</b>
+                <b className="clgcont">DEPARTMENT    HOD</b>
 
                 <div className="row  ">
                     <div className="col-lg-12 col-md-3">
-                        <img src={kec} alt="" />
+                        <img className="staffs" src={hod} alt="" />
+                        <br></br>
+                        <small className="clg1">Dr. K. KANNAN
+                        </small>
 
                     </div>
-                    </div>
-                    
-                    <div className="row mt-5">
+                </div>
+
+                <div className="row mt-5">
                     <b className="clgcont">STAFF COORDINATORS</b>
                     <div className="col-lg-4 col-md-3">
-                    <img src={kec} alt="" />
+                        <img className="staffs" src={sc1} alt="" />
+                        <br></br>
+
+                        <small className="clg1">Dr. A. S. PERIASAMY MANIKANDAN<br></br>
+                            Associate Proffesor
+                            Departmnt of Chemical Engineering</small>
 
                     </div>
-                    <div className="col-lg-4 col-md-3">
-                    <img src={kec} alt="" />
+                    <div className="col-lg-4 col-md-3 mt-3">
+                        <img className="staffs" src={sc2} alt="" />
+                        <br></br>
+                        <small className="clg1">S. MOTHIL <br></br>
+                            Assistant Professor 
+                            Departmnt of Chemical Engineering</small>
+
 
                     </div>
-                    <div className="col-lg-4 col-md-3">
-                    <img src={kec} alt="" />
+                    <div className="col-lg-4 col-md-3 mt-3">
+                        <img className="staffs" src={sc3} alt="" />
+                        <br></br>
+                        <small className="clg1">T. SATHISH<br></br>
+                        Assistant Professor
+                            Departmnt of Chemical Engineering</small>
 
                     </div>
 
@@ -172,18 +210,18 @@ export default function Mainpage() {
 
                         <div className="row">
 
-                       
-
-                        <div className="conus">
-                            <b  className="clgcont">CONTACT US</b>
-                            <h3  className="clgcont1" > student coordinators</h3>
-
-                            <h5 className="coname">Mr B.Charan - +91 94447 70517</h5>
-                            <h5 className="coname">Mr R.Deenadhayalan - +91 99940 41738</h5>
 
 
+                            <div className="conus">
+                                <b className="clgcont">CONTACT US</b>
+                                <h3 className="clgcont1" > student coordinators</h3>
 
-                        </div>
+                                <h5 className="coname">Mr B.Charan - +91 94447 70517</h5>
+                                <h5 className="coname">Mr R.Deenadhayalan - +91 99940 41738</h5>
+
+
+
+                            </div>
                         </div>
 
                         <div className="row mt-5">
@@ -223,8 +261,8 @@ export default function Mainpage() {
                     <div className="col-lg-6 col-md-6">
 
 
-                    <iframe className="frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.826470171063!2d77.60483861480529!3d11.27416319198491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96d7810fe32d5%3A0x85cf49c5b26fb72e!2sKongu%20Engineering%20College!5e0!3m2!1sen!2sin!4v1675595314904!5m2!1sen!2sin"
-                     ></iframe>
+                        <iframe className="frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.826470171063!2d77.60483861480529!3d11.27416319198491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96d7810fe32d5%3A0x85cf49c5b26fb72e!2sKongu%20Engineering%20College!5e0!3m2!1sen!2sin!4v1675595314904!5m2!1sen!2sin"
+                        ></iframe>
 
 
 
