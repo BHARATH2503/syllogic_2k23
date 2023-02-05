@@ -134,6 +134,35 @@ export default function Mainpage() {
 
 
             {/* contact */}
+            <div className="images">
+
+                <b className="clgcont">DEPT HOD</b>
+
+                <div className="row  ">
+                    <div className="col-lg-12 col-md-3">
+                        <img src={kec} alt="" />
+
+                    </div>
+                    </div>
+                    
+                    <div className="row mt-5">
+                    <b className="clgcont">STAFF COORDINATORS</b>
+                    <div className="col-lg-4 col-md-3">
+                    <img src={kec} alt="" />
+
+                    </div>
+                    <div className="col-lg-4 col-md-3">
+                    <img src={kec} alt="" />
+
+                    </div>
+                    <div className="col-lg-4 col-md-3">
+                    <img src={kec} alt="" />
+
+                    </div>
+
+                </div>
+
+            </div>
 
             <div className="contact">
                 <div className="row">
