@@ -351,24 +351,7 @@ export default function Mainpage() {
                     </div>
 
                 </div>
-
-
-
-
-
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
         </>
     )
