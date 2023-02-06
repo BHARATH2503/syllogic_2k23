@@ -55,8 +55,8 @@ export default function Mainpage() {
                 </div>
 
 
-                  <Navbar className="ml-3" fixed="bottom" >
-                    
+                <Navbar className="ml-3" fixed="bottom" >
+
 
                     {/* <a id="b2t" style={{ display: "none" }} href="#top" className="back">go top</a> */}
                     <a href="#top">  <button id="b2t" style={{ display: "none" }} class="noselect"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" /></svg></button>
@@ -109,8 +109,8 @@ export default function Mainpage() {
                             <div><img className="sliderImg" src={sc2}  alt="" /></div>
                             <div><img className="sliderImg" src={sc1}  alt="" /></div>
                         </Slider> */}
-                       
-                            {/* <h5 className="heading">ABOUT THE INSTITUTION</h5>
+
+                {/* <h5 className="heading">ABOUT THE INSTITUTION</h5>
                             <p className="para">
                                 Kongu Engineering College (KEC) was established in the year 1984. Approved by AICTE, New Delhi and affiliated to Anna University, Chennai. The Institution has completed 39 years of dedicated and excellent service in the field of technical education. It offers 14 UG, 19 PG and 16 Research programmes in Engineering, Applied Sciences and Management branches. The Institution has got NBA accreditation for UG programme, Best Engineering College award and the Best Principal Award twice. The Institution is one among the best in imparting high quality technical education in Tamil Nadu and it is ranked high among the Engineering Institutes including IITs, NITs, Central Universities by various surveys conducted by magazines such as Outlook, The Week, Competition Success Review etc. The institution has established a Technology Business Incubator (TBI) supported by Department of Science and Technology (DST) Government of India.
                             </p>
@@ -127,21 +127,21 @@ export default function Mainpage() {
                     </div>
 
                 // </div> }*/}
-            </div>
 
 
 
-            <div style={{paddingBottom:"1%"}}>
-                <a href="#event">
-                    <div className='scrolldown'>
-                        <div className="chevrons">
-                            <div className='chevrondown'></div>
-                            <div className='chevrondown'></div>
+
+                <div style={{ paddingBottom: "1%" }}>
+                    <a href="#event">
+                        <div className='scrolldown'>
+                            <div className="chevrons">
+                                <div className='chevrondown'></div>
+                                <div className='chevrondown'></div>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
-
             {/*-------------------------------- Event page-------------------------------- */}
             <div id="event" className="events">
                 <section className="dark">
@@ -160,9 +160,19 @@ export default function Mainpage() {
                                     </time>
                                 </div>
                                 <div className="postcard__bar"></div>
-                                <div className="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                                <div className="postcard__preview-txt pt-5">
+                                    <ol>
+                                        <li>
+                                            Paper Presentation
+                                        </li>
+                                        <li>
+                                            Poster Presentation
+                                        </li>
+                                    </ol>
+                                    <small>You can participate in both paper and poster presentation</small>
+                                    </div>
                                 <ul className="postcard__tagbox">
-                                    <Link to={`/tech`}><button className="button1">Register</button></Link>
+                                    <Link to={`/tech`}><button className="button2">Register</button></Link>
                                 </ul>
                             </div>
                         </article>
@@ -180,9 +190,22 @@ export default function Mainpage() {
                                     </time>
                                 </div>
                                 <div className="postcard__bar"></div>
-                                <div className="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                                <div className="postcard__preview-txt">
+                                <ol>
+                                        <li>
+                                            Quiz⛳
+                                        </li>
+                                        <li>
+                                            Attain Brain🧠
+                                        </li>
+                                        <li>
+                                            Minute to Win'It⏰
+                                        </li>
+                                    </ol>
+                                    <small>You can participate in all non technical events🎀</small>
+                                    </div>
                                 <ul className="postcard__tagbox">
-                                    <Link to={`/nontech`}><button className="button1">Register</button></Link>
+                                    <Link to={`/nontech`}><button className="button2">Register</button></Link>
                                 </ul>
                             </div>
                         </article>
@@ -205,32 +228,32 @@ export default function Mainpage() {
             </div>
 
             <div className="about">
-                    <div className="ab1 row mt-2.8" style={{ width: "100%", padding: "1% 3% 1% 3%" }}>
+                <div className="ab1 row mt-2.8" style={{ width: "100%", padding: "1% 3% 1% 3%" }}>
 
-                        {/* <Slider {...settings} className="mx-5 mt-3">
+                    {/* <Slider {...settings} className="mx-5 mt-3">
                             <div><img className="sliderImg" src={hod}  alt="" /></div>
                             <div><img className="sliderImg" src={mail}  alt="" /></div>
                             <div><img className="sliderImg" src={sc2}  alt="" /></div>
                             <div><img className="sliderImg" src={sc1}  alt="" /></div>
                         </Slider> */}
-                       
-                            <h5 className="heading">ABOUT THE INSTITUTION</h5>
-                            <p className="para">
-                                Kongu Engineering College (KEC) was established in the year 1984. Approved by AICTE, New Delhi and affiliated to Anna University, Chennai. The Institution has completed 39 years of dedicated and excellent service in the field of technical education. It offers 14 UG, 19 PG and 16 Research programmes in Engineering, Applied Sciences and Management branches. The Institution has got NBA accreditation for UG programme, Best Engineering College award and the Best Principal Award twice. The Institution is one among the best in imparting high quality technical education in Tamil Nadu and it is ranked high among the Engineering Institutes including IITs, NITs, Central Universities by various surveys conducted by magazines such as Outlook, The Week, Competition Success Review etc. The institution has established a Technology Business Incubator (TBI) supported by Department of Science and Technology (DST) Government of India.
-                            </p>
-                            <h5 className="heading">ABOUT THE DEPARTMENT</h5>
-                            <p className="para" style={{ textAlign: "justify" }}>
-                                The Department of Chemical Engineering was started in the academic year 1994-95. It offers B.Tech, M.Tech
-                                and Ph.D degree programmes recognized by Anna University, Chennai. Besides teaching, the department is actively
-                                involved in industrial consultancy, and conducting training programmes including various sponsored seminar and
-                                workshops for students and practicing engineers. Numerous funded projects from MoEF, AICTE and UGC has been
-                                completed successfully and few are in progress. The department has advanced simulation softwares such as Fluent,
-                                HYSIS, ASPEN plus, HTRI, gPROM and PROSIM.
-                            </p>
 
-                    </div>
+                    <h5 className="heading">ABOUT THE INSTITUTION</h5>
+                    <p className="para">
+                        Kongu Engineering College (KEC) was established in the year 1984. Approved by AICTE, New Delhi and affiliated to Anna University, Chennai. The Institution has completed 39 years of dedicated and excellent service in the field of technical education. It offers 14 UG, 19 PG and 16 Research programmes in Engineering, Applied Sciences and Management branches. The Institution has got NBA accreditation for UG programme, Best Engineering College award and the Best Principal Award twice. The Institution is one among the best in imparting high quality technical education in Tamil Nadu and it is ranked high among the Engineering Institutes including IITs, NITs, Central Universities by various surveys conducted by magazines such as Outlook, The Week, Competition Success Review etc. The institution has established a Technology Business Incubator (TBI) supported by Department of Science and Technology (DST) Government of India.
+                    </p>
+                    <h5 className="heading">ABOUT THE DEPARTMENT</h5>
+                    <p className="para" style={{ textAlign: "justify" }}>
+                        The Department of Chemical Engineering was started in the academic year 1994-95. It offers B.Tech, M.Tech
+                        and Ph.D degree programmes recognized by Anna University, Chennai. Besides teaching, the department is actively
+                        involved in industrial consultancy, and conducting training programmes including various sponsored seminar and
+                        workshops for students and practicing engineers. Numerous funded projects from MoEF, AICTE and UGC has been
+                        completed successfully and few are in progress. The department has advanced simulation softwares such as Fluent,
+                        HYSIS, ASPEN plus, HTRI, gPROM and PROSIM.
+                    </p>
 
                 </div>
+
+            </div>
 
 
 
@@ -241,7 +264,7 @@ export default function Mainpage() {
 
                 <b className="clgcont">DEPARTMENT HOD</b>
 
-                <div className="row  ">
+                <div className="row mt-3  ">
                     <div className="col-lg-12 col-md-3">
                         <img className="staffs" src={hod} alt="" />
                         <br></br>
@@ -253,7 +276,7 @@ export default function Mainpage() {
 
                 <div className="row mt-5">
                     <b className="clgcont">STAFF COORDINATORS</b>
-                    <div className="col-lg-4 col-md-3 mt-3">
+                    <div className="col-lg-4 col-md-3 ">
                         <img className="staffs" src={sc1} alt="" />
                         <br></br>
 
@@ -296,10 +319,13 @@ export default function Mainpage() {
 
                             <div className="conus">
                                 <b className="clgcont">CONTACT US</b>
-                                <h3 className="clgcont1" > student coordinators</h3>
-
-                                <h5 className="coname">Mr B.Charan - +91 94447 70517</h5>
+                                <h3 className="clgcont1 mt-2" > Student Coordinators</h3>
                                 <h5 className="coname">Mr R.Deenadhayalan - +91 99940 41738</h5>
+                                <h5 className="coname mt-2">Mr R.Pavendiran - +91 93602 74496</h5>
+                                
+{/* 
+                                <h5 className="coname">Mr R.Deenadhayalan - +91 99940 41738</h5>
+                                <h5 className="coname">Mr R.Deenadhayalan - +91 99940 41738</h5> */}
 
 
 
@@ -352,7 +378,7 @@ export default function Mainpage() {
 
                 </div>
             </div>
-
+            <small className="clg1">D & D -  @20IT</small>
         </>
     )
 }

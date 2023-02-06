@@ -133,6 +133,62 @@ div.fg {
 }
 
 
+.button2 {
+  min-width: 300px;
+  min-height: 50px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: rgb(254, 194, 92);
+  background: linear-gradient(to right, rgb(255, 189, 74), rgb(250, 230, 80));
+  border: none;
+  border-radius: 800px;
+  box-shadow: 12px 12px 24px rgb(255, 189, 74);
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  margin-top: 120px;
+  padding: 10px;
+}
+
+.button2::before {
+  content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid rgb(255, 189, 74);
+  box-shadow: 0 0 60px rgb(255, 189, 74);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button2:hover,
+.button2:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+.button2:hover::before,
+.button2:focus::before {
+  opacity: 1;
+}
+
+.button2:hover::after,
+.button2:focus::after {
+  animation: none;
+  display: none;
+}
+
+
+
+
 .countdown-container {
   display: flex;
 }
@@ -197,6 +253,9 @@ div.fg {
     font-size: 1.5rem;
     line-height: 3.5rem;
     margin: 10px 0px;
+  }
+  .button2{
+    width: 100%;
   }
 
 }

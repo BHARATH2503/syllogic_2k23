@@ -4,9 +4,8 @@
   font-size: 11px;
   /* height: 100vh; */
 }
-
-div.page1 {
-  height:90vh;
+.page1 {
+  height:100vh;
 }
 
 /* .navbrand {
@@ -157,7 +156,7 @@ button.slick-arrowslick-next
   border-radius: 50px;
   box-sizing: border-box;
   margin-bottom: 16px;
-  margin-top: -0.9%;
+  margin-top: 25%;
   margin-left: 50%;
 }
 
@@ -396,11 +395,11 @@ button.slick-arrowslick-next
   }
 
   div.scrolldown {
-    margin-top: 100%;
+    margin-top: 110%;
   }
 
   div.page1 {
-    height: 100dvh;
+    height: 90dvh;
   }
 
   div.events {
@@ -408,7 +407,7 @@ button.slick-arrowslick-next
   }
   .frame{
     height: 300px;
-    width: 200px;
+    width: 300px;
   }
   .social{
     height: 15px;

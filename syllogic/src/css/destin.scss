@@ -95,7 +95,7 @@ a, a:hover {
     height: 10px;
     margin: 10px 0;
     border-radius: 5px;
-    background-color: #424242;
+    background-color: gold;
     transition: width 0.2s ease;
   }
 
@@ -114,6 +114,7 @@ a, a:hover {
   }
 
   .postcard__tagbox {
+    margin-bottom: 15%;
     display: flex;
     flex-flow: row wrap;
     font-size: 14px;
