@@ -1,7 +1,7 @@
 .mainpage {
   margin-top: 1%;
   background: radial-gradient(#272727, #1b1b1b);
-
+  font-size: 11px;
   /* height: 100vh; */
 }
 
@@ -408,9 +408,7 @@ button.slick-arrowslick-next
   }
   .frame{
     height: 300px;
-    width: 300px;
-    
-    
+    width: 200px;
   }
   .social{
     height: 15px;
@@ -423,6 +421,9 @@ button.slick-arrowslick-next
     width: 15px;
     font-size: 10px;
     
+  }
+  .clgcont{
+    font-size: 18px;
   }
   .clgcont1{
     font-style: italic;
@@ -440,6 +441,9 @@ button.slick-arrowslick-next
   
 }
 
+.ab1{
+  padding: 0%;
+}
 
 /* back */
 

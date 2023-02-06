@@ -17,8 +17,8 @@ import insta from "../assets/instagram.png";
 import chem from "../assets/chemlogo.jpg";
 
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -71,13 +71,13 @@ export default function Mainpage() {
                     <Container>
                         <Row>
                             <Row>
-                                <pre className="cname">
+                                <div className="cname">
                                     <Col className="cname">
                                         <img src={kec} alt="Transform Yourself" className="ilogo" />
                                         <small>Kongu Engineering College</small></Col>
-                                </pre>
+                                </div>
                             </Row>
-                            <Row className="rank" style={{ marginTop: "-2%" }}>
+                            <Row className="rank" >
                                 <Col sm={12}>Affilated to Anna University || Accrediated by NAAC with A++ grade</Col>
                                 <Col sm={12}>Perundurai Erode-638060 TamilNadu</Col>
                             </Row>
@@ -90,17 +90,17 @@ export default function Mainpage() {
                     <Container >
                         <Row>
                             <Row>
-                                <Col className="chass">Indian Institute Of Chemical Engineering</Col>
+                                <Col className="chass">Indian Institute Of Chemical Engineering  &</Col>
                             </Row>
                             <Row>
                                 <Col sm={12} className="chemdep">Chemical Engineering Association</Col>
-                                <Col sm={12} className="present">Presents</Col>
+                                {/* <Col sm={12} className="present">Presents</Col> */}
                             </Row>
 
                         </Row>
                     </Container>
                 </div>
-                <div className="about">
+                {/* <div className="about">
                     <div className="row mt-2.8" style={{ width: "100%", padding: "1% 3% 1% 3%" }}>
 
                         {/* <Slider {...settings} className="mx-5 mt-3">
@@ -110,7 +110,7 @@ export default function Mainpage() {
                             <div><img className="sliderImg" src={sc1}  alt="" /></div>
                         </Slider> */}
                        
-                            <h5 className="heading">ABOUT THE INSTITUTION</h5>
+                            {/* <h5 className="heading">ABOUT THE INSTITUTION</h5>
                             <p className="para">
                                 Kongu Engineering College (KEC) was established in the year 1984. Approved by AICTE, New Delhi and affiliated to Anna University, Chennai. The Institution has completed 39 years of dedicated and excellent service in the field of technical education. It offers 14 UG, 19 PG and 16 Research programmes in Engineering, Applied Sciences and Management branches. The Institution has got NBA accreditation for UG programme, Best Engineering College award and the Best Principal Award twice. The Institution is one among the best in imparting high quality technical education in Tamil Nadu and it is ranked high among the Engineering Institutes including IITs, NITs, Central Universities by various surveys conducted by magazines such as Outlook, The Week, Competition Success Review etc. The institution has established a Technology Business Incubator (TBI) supported by Department of Science and Technology (DST) Government of India.
                             </p>
@@ -126,7 +126,7 @@ export default function Mainpage() {
 
                     </div>
 
-                </div>
+                // </div> }*/}
             </div>
 
 
@@ -204,6 +204,33 @@ export default function Mainpage() {
 
             </div>
 
+            <div className="about">
+                    <div className="ab1 row mt-2.8" style={{ width: "100%", padding: "1% 3% 1% 3%" }}>
+
+                        {/* <Slider {...settings} className="mx-5 mt-3">
+                            <div><img className="sliderImg" src={hod}  alt="" /></div>
+                            <div><img className="sliderImg" src={mail}  alt="" /></div>
+                            <div><img className="sliderImg" src={sc2}  alt="" /></div>
+                            <div><img className="sliderImg" src={sc1}  alt="" /></div>
+                        </Slider> */}
+                       
+                            <h5 className="heading">ABOUT THE INSTITUTION</h5>
+                            <p className="para">
+                                Kongu Engineering College (KEC) was established in the year 1984. Approved by AICTE, New Delhi and affiliated to Anna University, Chennai. The Institution has completed 39 years of dedicated and excellent service in the field of technical education. It offers 14 UG, 19 PG and 16 Research programmes in Engineering, Applied Sciences and Management branches. The Institution has got NBA accreditation for UG programme, Best Engineering College award and the Best Principal Award twice. The Institution is one among the best in imparting high quality technical education in Tamil Nadu and it is ranked high among the Engineering Institutes including IITs, NITs, Central Universities by various surveys conducted by magazines such as Outlook, The Week, Competition Success Review etc. The institution has established a Technology Business Incubator (TBI) supported by Department of Science and Technology (DST) Government of India.
+                            </p>
+                            <h5 className="heading">ABOUT THE DEPARTMENT</h5>
+                            <p className="para" style={{ textAlign: "justify" }}>
+                                The Department of Chemical Engineering was started in the academic year 1994-95. It offers B.Tech, M.Tech
+                                and Ph.D degree programmes recognized by Anna University, Chennai. Besides teaching, the department is actively
+                                involved in industrial consultancy, and conducting training programmes including various sponsored seminar and
+                                workshops for students and practicing engineers. Numerous funded projects from MoEF, AICTE and UGC has been
+                                completed successfully and few are in progress. The department has advanced simulation softwares such as Fluent,
+                                HYSIS, ASPEN plus, HTRI, gPROM and PROSIM.
+                            </p>
+
+                    </div>
+
+                </div>
 
 
 
@@ -212,7 +239,7 @@ export default function Mainpage() {
             {/* contact */}
             <div className="images">
 
-                <b className="clgcont">DEPARTMENT    HOD</b>
+                <b className="clgcont">DEPARTMENT HOD</b>
 
                 <div className="row  ">
                     <div className="col-lg-12 col-md-3">

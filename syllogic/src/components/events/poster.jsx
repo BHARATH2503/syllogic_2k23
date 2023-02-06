@@ -12,7 +12,7 @@ export default function Poster(){
         <ul>
           <li>Posters from any theme are permitted to present</li>
           <li>Poster should be presented in A3 sheet</li>
-          <li>Each participating team should comprise of a maximum of 3 members and Min of1</li>
+          <li>Each participating team should comprise of a maximum of 3 members and Min of 1</li>
           <li>Hardcopy of the poster should be submitted to the juries during the event</li>
           <li>Three minutes will be permitted for the presentation of the poster and two minutes will be for queries</li>
           <li>All participants will be awarded with the certification of participation</li>

@@ -14,18 +14,18 @@ import ppimg1 from "../assets/ppimg1.jpg";
 export default function Tech() {
     return (
         <>
-            <div className="mainpage">
 
-                <Navbar expand="lg" className="ms-4" >
-                    <p className="navbrand">
-                        <Link to="/home" className="d-flex">
-                            <img src={chem} alt="Chem" className="chemlogo me-2" />
-                            <h2 className="navbrand1">SYLLOGIC 2K23</h2>
-                            <img src={Logo} alt="Logo" className="logo1  ms-2" />
-                        </Link>
-                    </p>
-                </Navbar>
-                </div>
+            <div className="mainpage">
+            <Navbar expand="lg" className="ms-4">
+                <p className="navbrand">
+                    <Link to="/home" className="d-flex">
+                        <img src={chem} alt="Chem" className="chemlogo me-2" />
+                        <h2 className="navbrand1">SYLLOGIC 2K23</h2>
+                        <img src={Logo} alt="Logo" className="logo1  ms-2" />
+                    </Link>
+                </p>
+            </Navbar>
+        </div>
             <h1 id="pageHeaderTitle" className="techheader">Technical events</h1>
             <div className='div1'>
                 <ul class="cards">
