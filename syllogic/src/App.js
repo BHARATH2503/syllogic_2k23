@@ -5,7 +5,6 @@ import {BrowserRouter ,Routes,Route} from 'react-router-dom';
 import Mainpage from './components/mainpage';
 import Tech from './components/tech';
 import Nontech from './components/nontech';
-import Gallery from './components/gallery';
 import Paper from './components/events/paper';
 import Poster from './components/events/poster';
 
@@ -18,7 +17,6 @@ function App() {
         <Route path="/home" element={<Mainpage/>}/>
         <Route path='/tech' element={<Tech/>}/>
         <Route path='/nontech' element={<Nontech/>}/>
-        <Route path='/gallery' element={<Gallery/>}/>
         <Route path='/paper' element={<Paper/>}/>
         <Route path='/poster' element={<Poster/>}/>
       </Routes>
