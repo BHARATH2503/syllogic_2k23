@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5bad3501.css",
+    "main.js": "/static/js/main.193a9d14.js",
+    "static/media/Slice 14 1.png": "/static/media/Slice 14 1.4c37d71b454d41ca425e.png",
+    "static/media/ppimg.jpg": "/static/media/ppimg.07f85d9952934f1f7321.jpg",
+    "static/media/minute.png": "/static/media/minute.71122152a704a5997eca.png",
+    "static/media/hod.jpg": "/static/media/hod.2864278dfa4148fbb27c.jpg",
+    "static/media/chemlogo.jpg": "/static/media/chemlogo.bfa945aab382dea189dc.jpg",
+    "static/media/nontech.jpg": "/static/media/nontech.abb4f3acd8e293fde97e.jpg",
+    "static/media/sc1.jpg": "/static/media/sc1.726fa7e40f774fde0df5.jpg",
+    "static/media/sc2.jpg": "/static/media/sc2.3d3bc3279dd494727902.jpg",
+    "static/media/quiz.png": "/static/media/quiz.26aacd45d3a3943e5f16.png",
+    "static/media/ppimg1.jpg": "/static/media/ppimg1.2b5c4e2645d76b8e3bd4.jpg",
+    "static/media/tech.jpg": "/static/media/tech.29ff419e93dd3ddfe92b.jpg",
+    "static/media/sc3.jpg": "/static/media/sc3.ea503067e7542b40edea.jpg",
+    "static/media/instagram.png": "/static/media/instagram.e719d8b29f452a16302d.png",
+    "static/media/chemlogo2.png": "/static/media/chemlogo2.8689a14d973c7d5e905b.png",
+    "static/media/brain.jpg": "/static/media/brain.2509e1aaa0c08c27bd18.jpg",
+    "static/media/kec.png": "/static/media/kec.f381ece6544b7b483df9.png",
+    "static/media/gmail.png": "/static/media/gmail.a2f2146f929409405da0.png",
+    "index.html": "/index.html",
+    "main.5bad3501.css.map": "/static/css/main.5bad3501.css.map",
+    "main.193a9d14.js.map": "/static/js/main.193a9d14.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bad3501.css",
+    "static/js/main.193a9d14.js"
+  ]
+}
