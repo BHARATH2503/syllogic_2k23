@@ -1,13 +1,16 @@
 import "../css/nontech.css"
-import kec from "../assets/kec.png";
+// import kec from "../assets/kec.png";
 import chem from "../assets/chemlogo.jpg";
 import Logo from '../assets/chemlogo2.png'
+import Quiz from '../assets/quiz.png'
+import Brain from '../assets/brain.jpg'
+import Minute from '../assets/minute.png'
 import {  Navbar  } from 'react-bootstrap';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Link } from "react-router-dom";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+// import Container from 'react-bootstrap/Container';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
 export default function Nontech() {
     return (
         <>
@@ -21,17 +24,18 @@ export default function Nontech() {
                     </Link>
                 </p>
             </Navbar>
-        </div><div className="nontech">
+        </div>
+        <div className="nontech">
                 <h1 id="pageHeaderTitle" className="techheader">Non-Technical events</h1>
-                <ul class="cards">
+                <ul className="cards">
                     <li className="nl">
-                        <div class="card">
-                            <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
-                            <div class="card__overlay">
-                                <div class="card__header">
-                                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                                    <div class="card__header-text">
-                                        <h3 class="card__title">ConnectionX</h3>
+                        <div className="card">
+                            <img src={Quiz} className="card__image" alt="quiz" />
+                            <div className="card__overlay">
+                                <div className="card__header">
+                                    <svg className="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                                    <div className="card__header-text">
+                                        <h3 className="card__title">Quiz</h3>
 
                                     </div>
                                 </div>
@@ -42,13 +46,13 @@ export default function Nontech() {
                         </div>
                     </li>
                     <li className="nl">
-                        <div class="card">
-                            <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
-                            <div class="card__overlay">
-                                <div class="card__header">
-                                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                                    <div class="card__header-text">
-                                        <h3 class="card__title">Wisdom Torch</h3>
+                        <div className="card">
+                            <img src={Brain} className="card__image" alt="attain brain" />
+                            <div className="card__overlay">
+                                <div className="card__header">
+                                    <svg className="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                                    <div className="card__header-text">
+                                        <h3 className="card__title">Attain Brain</h3>
 
                                     </div>
                                 </div>
@@ -59,13 +63,13 @@ export default function Nontech() {
                         </div>
                     </li>
                     <li className="nl">
-                        <div class="card">
-                            <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
-                            <div class="card__overlay">
-                                <div class="card__header">
-                                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                                    <div class="card__header-text">
-                                        <h3 class="card__title">Picturesque</h3>
+                        <div className="card">
+                            <img src={Minute} className="card__image" alt="minute to win it" />
+                            <div className="card__overlay">
+                                <div className="card__header">
+                                    <svg className="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                                    <div className="card__header-text">
+                                        <h3 className="card__title">Minute to Win'It</h3>
 
                                     </div>
                                 </div>

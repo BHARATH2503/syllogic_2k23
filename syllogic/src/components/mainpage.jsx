@@ -4,9 +4,12 @@ import '../css/destin.scss'
 import Logo from '../assets/chemlogo2.png'
 import "../assets/js/back2top.js"
 
-import { Navbar } from 'react-bootstrap';
+import { Button, Navbar } from 'react-bootstrap';
+import { useNavigate } from "react-router-dom";
 import kec from "../assets/kec.png";
 import hod from "../assets/hod.jpg";
+import Non from '../assets/nontech.jpg'
+import Tech from '../assets/tech.jpg'
 
 // import video from "../assets/hod.jpg";
 import sc1 from "../assets/sc1.jpg";
@@ -38,14 +41,20 @@ export default function Mainpage() {
     //     autoplay: true,
     //     autoplaySpeed: 5000,
     // };
+    const navigate = useNavigate();
+    const tech = () => {
+        navigate('/tech');
+    };
+    const nontech = () => {
+        navigate('/nontech');
+    };
 
     return (
         <>
             <div className="page1">
                 <div className="mainpage">
-                    <Navbar expand="lg" className="" fixed="top" >
-
-                        <Link to="/" className="w-100 d-flex justify-content-center">
+                    <Navbar expand="lg" fixed="top" >
+                        <Link to="/" className="d-flex">
                             <img src={chem} alt="Chem" className="chemlogo me-2" />
                             <h2 className="navbrand1">SYLLOGIC 2K23</h2>
                             <img src={Logo} alt="Logo" className="logo1  ms-2" />
@@ -59,7 +68,7 @@ export default function Mainpage() {
 
 
                     {/* <a id="b2t" style={{ display: "none" }} href="#top" className="back">go top</a> */}
-                    <a href="#top">  <button id="b2t" style={{ display: "none" }} class="noselect"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" /></svg></button>
+                    <a href="#top">  <button id="b2t" style={{ display: "none" }} className="noselect"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" /></svg></button>
 
                     </a>
 
@@ -100,38 +109,31 @@ export default function Mainpage() {
                         </Row>
                     </Container>
                 </div>
-                {/* <div className="about">
-                    <div className="row mt-2.8" style={{ width: "100%", padding: "1% 3% 1% 3%" }}>
+                <h3 className="det">Event Details</h3>
+                <div className="details">
+                    
+            <div className="reg">
+             <h3 className="bot">Event Date and Venue</h3>
+                    DATE : 18 MARCH 2023 <br />
+                    VENUE : MAHARAJA   AUDITORIUM
+            </div>
+            <div className="reg">
+                <h3 className="bot">Registration Fees</h3> 
+                    For IIChE Membership <b>Rs.200</b>   <br />
+                    For Non-IIChE Membership <b>Rs.250</b> <br />
+                    Including Accomodation and Food
+            </div>
+            <div  className="reg">
+            <h3 className="bot1">Last Date of Registration</h3>
+              10 MARCH 2023
+                
+            </div>
+        </div>
 
-                        {/* <Slider {...settings} className="mx-5 mt-3">
-                            <div><img className="sliderImg" src={hod}  alt="" /></div>
-                            <div><img className="sliderImg" src={mail}  alt="" /></div>
-                            <div><img className="sliderImg" src={sc2}  alt="" /></div>
-                            <div><img className="sliderImg" src={sc1}  alt="" /></div>
-                        </Slider> */}
-
-                {/* <h5 className="heading">ABOUT THE INSTITUTION</h5>
-                            <p className="para">
-                                Kongu Engineering College (KEC) was established in the year 1984. Approved by AICTE, New Delhi and affiliated to Anna University, Chennai. The Institution has completed 39 years of dedicated and excellent service in the field of technical education. It offers 14 UG, 19 PG and 16 Research programmes in Engineering, Applied Sciences and Management branches. The Institution has got NBA accreditation for UG programme, Best Engineering College award and the Best Principal Award twice. The Institution is one among the best in imparting high quality technical education in Tamil Nadu and it is ranked high among the Engineering Institutes including IITs, NITs, Central Universities by various surveys conducted by magazines such as Outlook, The Week, Competition Success Review etc. The institution has established a Technology Business Incubator (TBI) supported by Department of Science and Technology (DST) Government of India.
-                            </p>
-                            <h5 className="heading">ABOUT THE DEPARTMENT</h5>
-                            <p className="para" style={{ textAlign: "justify" }}>
-                                The Department of Chemical Engineering was started in the academic year 1994-95. It offers B.Tech, M.Tech
-                                and Ph.D degree programmes recognized by Anna University, Chennai. Besides teaching, the department is actively
-                                involved in industrial consultancy, and conducting training programmes including various sponsored seminar and
-                                workshops for students and practicing engineers. Numerous funded projects from MoEF, AICTE and UGC has been
-                                completed successfully and few are in progress. The department has advanced simulation softwares such as Fluent,
-                                HYSIS, ASPEN plus, HTRI, gPROM and PROSIM.
-                            </p>
-
-                    </div>
-
-                // </div> }*/}
+                
 
 
-
-
-                <div style={{ paddingBottom: "1%" }}>
+                <div style={{ paddingBottom: "0%" }}>
                     <a href="#event">
                         <div className='scrolldown'>
                             <div className="chevrons">
@@ -150,15 +152,10 @@ export default function Mainpage() {
 
                         <article className="postcard gold">
                             {/* <a className="postcard__img_link" href="#"> */}
-                            <img className="postcard__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Frank_Schulenburg_giving_a_presentation_at_Wikimania_2011.jpg/1280px-Frank_Schulenburg_giving_a_presentation_at_Wikimania_2011.jpg" alt="Title" />
+                            <img className="postcard__img" src={Tech} alt="Title" />
                             {/* </a> */}
                             <div className="postcard__text">
                                 <h3 className="clg1">Technical Events</h3>
-                                <div className="postcard__subtitle small">
-                                    <time dateTime="2020-05-25 12:00:00">
-                                        <i className="fas fa-calendar-alt mr-2"></i>ALL TIME
-                                    </time>
-                                </div>
                                 <div className="postcard__bar"></div>
                                 <div className="postcard__preview-txt pt-5">
                                     <ol>
@@ -169,43 +166,34 @@ export default function Mainpage() {
                                             Poster Presentation
                                         </li>
                                     </ol>
-                                    <small>You can participate in both paper and poster presentation</small>
-                                    </div>
+                                    <small>The participants can participate in both paper and poster presentation</small>
+                                </div>
                                 <ul className="postcard__tagbox">
-                                    <Link to={`/tech`}><button className="button2">Register</button></Link>
+                                    <Button className="button2" onClick={tech}>Register</Button>
                                 </ul>
                             </div>
                         </article>
                         <article className="postcard ">
-                            {/* <a className="postcard__img_link" href="#"> */}
-                            <img className="postcard__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSbp9gZILglItjzhcNfsZnOOtyesnv9RoKEw&usqp=CAU" alt="Title" />
-                            {/* </a> */}
+                            <img className="postcard__img" src={Non} alt="Title" />
                             <div className="postcard__text">
-                                <h3 className="clg1">
-                                    {/* <a href="#"> */}
-                                    Non technical events</h3>
-                                <div className="postcard__subtitle small">
-                                    <time dateTime="2020-05-25 12:00:00">
-                                        <i className="fas fa-calendar-alt mr-2"></i>ALL TIME
-                                    </time>
-                                </div>
+                                <h3 className="clg1">Non technical events</h3>
                                 <div className="postcard__bar"></div>
                                 <div className="postcard__preview-txt">
-                                <ol>
+                                    <ol>
                                         <li>
-                                            Quiz⛳
+                                            Quiz
                                         </li>
                                         <li>
-                                            Attain Brain🧠
+                                            Attain Brain
                                         </li>
                                         <li>
-                                            Minute to Win'It⏰
+                                            Minute to Win'It
                                         </li>
                                     </ol>
-                                    <small>You can participate in all non technical events🎀</small>
-                                    </div>
+                                    <small>The participants can participate in all non technical events</small>
+                                </div>
                                 <ul className="postcard__tagbox">
-                                    <Link to={`/nontech`}><button className="button2">Register</button></Link>
+                                <Button className="button2" onClick={nontech}>Register</Button>
                                 </ul>
                             </div>
                         </article>
@@ -222,21 +210,13 @@ export default function Mainpage() {
 
                 <b className="clgcont">UPCOMING EVENT</b>
                 <br />
-                <iframe className="framev w-100" src="https://www.youtube.com/embed/sCpRzUfzi4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe className="framev w-100" src="https://www.youtube.com/embed/sCpRzUfzi4s?rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="true"></iframe>
 
 
             </div>
 
             <div className="about">
                 <div className="ab1 row mt-2.8" style={{ width: "100%", padding: "1% 3% 1% 3%" }}>
-
-                    {/* <Slider {...settings} className="mx-5 mt-3">
-                            <div><img className="sliderImg" src={hod}  alt="" /></div>
-                            <div><img className="sliderImg" src={mail}  alt="" /></div>
-                            <div><img className="sliderImg" src={sc2}  alt="" /></div>
-                            <div><img className="sliderImg" src={sc1}  alt="" /></div>
-                        </Slider> */}
-
                     <h5 className="heading">ABOUT THE INSTITUTION</h5>
                     <p className="para">
                         Kongu Engineering College (KEC) was established in the year 1984. Approved by AICTE, New Delhi and affiliated to Anna University, Chennai. The Institution has completed 39 years of dedicated and excellent service in the field of technical education. It offers 14 UG, 19 PG and 16 Research programmes in Engineering, Applied Sciences and Management branches. The Institution has got NBA accreditation for UG programme, Best Engineering College award and the Best Principal Award twice. The Institution is one among the best in imparting high quality technical education in Tamil Nadu and it is ranked high among the Engineering Institutes including IITs, NITs, Central Universities by various surveys conducted by magazines such as Outlook, The Week, Competition Success Review etc. The institution has established a Technology Business Incubator (TBI) supported by Department of Science and Technology (DST) Government of India.
@@ -276,7 +256,7 @@ export default function Mainpage() {
 
                 <div className="row mt-5">
                     <b className="clgcont">STAFF COORDINATORS</b>
-                    <div className="col-lg-4 col-md-3 ">
+                    <div className="col-lg-4 col-md-3 mt-3 ">
                         <img className="staffs" src={sc1} alt="" />
                         <br></br>
 
@@ -322,8 +302,8 @@ export default function Mainpage() {
                                 <h3 className="clgcont1 mt-2" > Student Coordinators</h3>
                                 <h5 className="coname">Mr R.Deenadhayalan - +91 99940 41738</h5>
                                 <h5 className="coname mt-2">Mr R.Pavendiran - +91 93602 74496</h5>
-                                
-{/* 
+
+                                {/* 
                                 <h5 className="coname">Mr R.Deenadhayalan - +91 99940 41738</h5>
                                 <h5 className="coname">Mr R.Deenadhayalan - +91 99940 41738</h5> */}
 
@@ -338,11 +318,11 @@ export default function Mainpage() {
 
 
 
-                            <div className="col-6" >
+                            <div className="col-6">
 
 
                                 <a href="mailto:syllogic2023@gmail.com" className="social1">
-                                    <img className="social1img" src={mail} alt="" />
+                                    <img className="social1img" src={mail} alt="gmail" />
                                     <br />
                                     <small className="clg1">
                                         syllogic2023@gmail.com
@@ -350,12 +330,12 @@ export default function Mainpage() {
                                 </a>
 
                             </div>
-                            <div className="col-6" >
+                            <div className="col-6 mt-1" >
                                 <a className="social" href="https://www.instagram.com/kec_chem_official/?igshid=YmMyMTA2M2Y%3D">
-                                    <img className="socialimg" src={insta} alt="" />
+                                    <img className="socialimg" src={insta} alt="insatagram" />
                                     <br />
                                     <small className="clg1">
-                                        CEA
+                                        kec_chem_official
                                     </small>
 
                                 </a>
@@ -378,7 +358,7 @@ export default function Mainpage() {
 
                 </div>
             </div>
-            <small className="clg1">D & D -  @20IT</small>
+            {/* <small className="clg1">D & D -  @20IT</small> */}
         </>
     )
 }

@@ -2,7 +2,6 @@ let countDown=()=>{
     let futureDate=new Date("18 Mar 2023");
     let currentDate=new Date();
     let myDate=futureDate-currentDate;
-    // console.log(myDate);
 
     let daysItem=document.querySelector("#days");
     let hoursItem=document.querySelector("#hours");

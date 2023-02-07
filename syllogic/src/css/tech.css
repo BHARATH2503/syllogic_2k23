@@ -5,15 +5,16 @@
   font-size: 2.5rem;
 }
 
-.tech {
-  margin-top: 5%;
+Link.d-flex
+{
+  margin: 1%;
 }
 
 .div1 {
   height: 100vh;
   width: 90%;
   padding: 100px;
-  margin-top: -150px;
+  margin-top: -100px;  
 }
 
 .techheader {
@@ -43,7 +44,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin: 4rem 5vw;
-    padding: 0;
+    padding: 0%;
     list-style-type: none;
   }
   
@@ -78,7 +79,7 @@
   .card:hover .card__overlay {
     transform: translateY(0);
   }
-  
+
   .card__header {
     position: relative;
     display: flex;
@@ -169,18 +170,25 @@
   width: 80%;
 }
 
-@media (max-width:767px) {
+@media (max-width:600px) {
   li {
     margin-left: 0px;
   }
-
+  
   .div1 {
-    height: 60vh;
+    height: 80vh;
     padding: 0px;
-    margin-top: 0px;
+    margin-top:-3%;
   }
-
-  .tech {
-    margin-top:-10%;
+  .techheader{
+    margin: 0px;
+  }
+  .card.poster
+  {
+    height: 120%;
+  }
+  ul.cards
+  {
+    margin-top: 5%;
   }
 }

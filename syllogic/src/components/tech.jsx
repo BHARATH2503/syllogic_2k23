@@ -1,22 +1,17 @@
 import '../css/tech.css';
-import kec from "../assets/kec.png";
 import chem from "../assets/chemlogo.jpg";
 import Logo from '../assets/chemlogo2.png'
 import { Navbar } from 'react-bootstrap';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Link } from "react-router-dom";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import ppimg from "../assets/ppimg.jpg";
 import ppimg1 from "../assets/ppimg1.jpg";
 
 export default function Tech() {
     return (
         <>
-
             <div className="mainpage">
-            <Navbar expand="lg" className="ms-4">
+            <Navbar  expand="lg" className="ms-4">
                 <p className="navbrand">
                     <Link to="/home" className="d-flex">
                         <img src={chem} alt="Chem" className="chemlogo me-2" />
@@ -26,18 +21,18 @@ export default function Tech() {
                 </p>
             </Navbar>
         </div>
-            <h1 id="pageHeaderTitle" className="techheader">Technical events</h1>
             <div className='div1'>
-                <ul class="cards">
+            <h1 id="pageHeaderTitle" className="techheader">Technical events</h1>
+                <ul className="cards">
                     <li style={{ marginLeft: "50px" }}>
-                        <div class="card">
-                            <img src={ppimg} class="card__image" alt="" />
-                            <div class="card__overlay">
-                                <div class="card__header">
-                                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                                    {/* <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" /> */}
-                                    <div class="card__header-text">
-                                        <h3 class="card__title" >Paper Presentation</h3>
+                        <div className="card">
+                            <img src={ppimg} className="card__image" alt="" />
+                            <div className="card__overlay">
+                                <div className="card__header">
+                                    <svg className="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                                    {/* <img className="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" /> */}
+                                    <div className="card__header-text">
+                                        <h3 className="card__title" >Paper Presentation</h3>
 
                                         </div>
                                     </div>
@@ -48,13 +43,13 @@ export default function Tech() {
                             </div>
                         </li>
                         <li style={{ marginLeft: "50px" }}>
-                            <div class="card">
-                                <img src={ppimg1} class="card__image" alt="" />
-                                <div class="card__overlay">
-                                    <div class="card__header">
-                                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                                        <div class="card__header-text">
-                                            <h3 class="card__title">Poster Presentation</h3>
+                            <div className="card poster">
+                                <img src={ppimg1} className="card__image" alt="" />
+                                <div className="card__overlay">
+                                    <div className="card__header">
+                                        <svg className="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                                        <div className="card__header-text">
+                                            <h3 className="card__title">Poster Presentation</h3>
 
                                     </div>
                                 </div>

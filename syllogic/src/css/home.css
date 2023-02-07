@@ -70,8 +70,7 @@ div.fg {
   background-image: url("../assets/Slice\ 14\ 1.png");
   background-position: 100%;
   background-size: cover;
-  background-repeat: no-repeat;
-  height: auto;
+  background-repeat: repeat;
 }
 
 .wrap {
@@ -233,20 +232,38 @@ div.fg {
   min-width: 150px;
 }
 
-@media (max-width:992px) {
+/* @media (max-width:992px) {
   .countdown-container {
-    margin: 0 1rem;
+    margin: 1 2rem;
   }
-}
+} */
 
 @media (max-width:767px) {
+  .full1{
+    height: 100vh;
+  }
+  .wrapper{
+    margin-top: 10%;
+  }
+  .crapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
   .countdown-container {
     flex-wrap: wrap;
+    margin-top: 25%;
   }
-
+  .big-text
+  {
+    font-size: 40px;
+  }
+ 
+ 
   .countdown-container>div {
     margin: 1rem auto;
-    max-width: 150px;
+    max-width: 100px;
   }
 
   .title {
@@ -257,5 +274,5 @@ div.fg {
   .button2{
     width: 100%;
   }
-
+  
 }

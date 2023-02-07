@@ -1,21 +1,17 @@
 .mainpage {
-  margin-top: 1%;
-  background: radial-gradient(#272727, #1b1b1b);
-  font-size: 11px;
+  font-size: 12px;
   /* height: 100vh; */
+}
+.d-flex{
+  margin: 1%;
 }
 .page1 {
   height:100vh;
 }
 
-/* .navbrand {
-  justify-content: center;
-  align-items: center;
-} */
-
 .chemlogo,
 .logo1 {
-  width: 4%;
+  width: 5%;
   height: 4%;
 }
 
@@ -41,11 +37,61 @@
   }
 } */
 .sliderImg{
-  height: 400px;
-  width: auto;
-  display: flex;
-  justify-content: center;
+  height:100px;
+  
 }
+
+.reg{
+  background-color: rgba(0, 0, 0, 0.833);
+  padding: 3.5vw;
+  text-align: center;
+  color: #fff;
+  line-height: 32px;
+  border-radius:20px;
+}
+.details{
+  margin: 3% 2% 2% 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(129px, auto);
+  grid-gap: 10px;
+  font-family: 'Domine', serif;
+ 
+}
+.det
+{
+  margin-top: 2%;
+}
+.bot{
+  margin-bottom: 2%;
+}
+.bot1{
+  margin-top: 5%;
+}
+@media screen and (max-width:768px) {
+  .details{
+      grid-template-columns: repeat(2, 1fr);
+      font-size: medium;
+      grid-gap: 20px;
+  }
+.det
+{
+  margin-top: 5%;
+}
+
+}
+
+@media screen and (max-width:420px) {
+  .details{
+      grid-template-columns: repeat(1, 1fr);
+      font-size: medium;
+      grid-gap: 20px;
+  }
+  .reg{
+    margin-top: 5%;
+  }
+}
+
 .heading{
   text-transform: uppercase;
   background: linear-gradient(to right, rgb(255, 189, 74), rgb(250, 230, 80));
@@ -128,16 +174,22 @@ button.slick-arrowslick-next
   letter-spacing: 3px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-
-.present {
+h3.bot,.bot1,.det{
   background: linear-gradient(to right, rgb(255, 189, 74), rgb(250, 230, 80));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
-  letter-spacing: 4px;
-  font-family: 'El Messiri', sans-serif;
+  letter-spacing: 3px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}
+.postcard__preview-txt
+{
+  font-family: 'Roboto Slab', serif;
+  font-size:18px;
+  letter-spacing: 2px
 }
 
 .row {
@@ -156,7 +208,7 @@ button.slick-arrowslick-next
   border-radius: 50px;
   box-sizing: border-box;
   margin-bottom: 16px;
-  margin-top: 25%;
+  margin-top: 4%;
   margin-left: 50%;
 }
 
@@ -278,6 +330,7 @@ button.slick-arrowslick-next
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  font-family: 'Roboto Slab', serif;
 }
 .clgcont {
   background: linear-gradient(to right, rgb(255, 189, 74), rgb(250, 230, 80));
@@ -286,12 +339,15 @@ button.slick-arrowslick-next
   color: transparent;
    font-size: 30px;
    margin-bottom: 50px;
+   font-family: 'Roboto Slab', serif;
 }
 .clgcont1{
   font-style: italic;
+  font-family: 'Roboto Slab', serif;
 }
 .coname{
   font-size: 15px;
+  font-family: 'Roboto Slab', serif;
 }
 
 .staffs{
@@ -345,8 +401,11 @@ button.slick-arrowslick-next
 
 
 
-/* media query for college name */
+/* media query*/
 @media screen and (max-width: 600px) {
+  .d-flex{
+    justify-content: center;
+  }
   div.kecname {
     font-size: 12px;
     margin-top: 12%;
@@ -395,7 +454,8 @@ button.slick-arrowslick-next
   }
 
   div.scrolldown {
-    margin-top: 110%;
+    /* margin-top: 15%; */
+    display: none;
   }
 
   div.page1 {

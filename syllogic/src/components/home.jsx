@@ -17,19 +17,19 @@ export default function Home() {
                 <div className="crapper">
                     <div>
                         <div className="countdown-container">
-                            <div>
+                            <div className="time">
                                 <p id="days" style={{ margin: "0px" }} className="big-text">0</p>
                                 <span>Days</span>
                             </div>
-                            <div>
+                            <div className="time">
                                 <p id="hours" style={{ margin: "0px" }} className="big-text">0</p>
                                 <span>Hours</span>
                             </div>
-                            <div>
+                            <div className="time">
                                 <p id="min" style={{ margin: "0px" }} className="big-text">0</p>
                                 <span>Minutes</span>
                             </div>
-                            <div>
+                            <div className="time">
                                 <p id="sec" style={{ margin: "0px" }} className="big-text">0</p>
                                 <span>Seconds</span>
                             </div>

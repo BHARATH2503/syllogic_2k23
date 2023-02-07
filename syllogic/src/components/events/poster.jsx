@@ -3,7 +3,7 @@ import '../../css/events.css'
 export default function Poster(){
     return(
     <div className='paper'>
-        <div class="container-sm container-main">
+        <div className="container-sm container-main">
         <h1 className='hh' style={{textAlign:"center"}}>POSTER PRESENTATION</h1>
         <br/>
         <div className='row'>
@@ -22,7 +22,7 @@ export default function Poster(){
          </div>
          <div className='col-lg-6 my-auto' id='reg'>
             <h3 className='hhh'>Registration link</h3>
-            <a href=""><button class="btn btn-warning mt-3" id='bb'>Register</button></a>
+            <a href=""><button className="btn btn-warning mt-3" id='bb'>Register</button></a>
         </div>
         </div></div>
     </div>
