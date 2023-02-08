@@ -207,10 +207,10 @@ export default function Mainpage() {
 
 
             <div className="container">
-
+                    <br />
                 <b className="clgcont">UPCOMING EVENT</b>
-                <br />
-                <iframe className="framev w-100" src="https://www.youtube.com/embed/sCpRzUfzi4s?rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                {/* <br />  */}
+                <iframe className="framev w-100 mt-3" src="https://www.youtube.com/embed/sCpRzUfzi4s?rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="true"></iframe>
 
 
             </div>
@@ -358,7 +358,7 @@ export default function Mainpage() {
 
                 </div>
             </div>
-            {/* <small className="clg1">D & D -  @20IT</small> */}
+            <small className="clg1">D & D -  @20IT</small>
         </>
     )
 }
