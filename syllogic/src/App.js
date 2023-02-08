@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './css/App.css';
 import Home from './components/home';
 import {BrowserRouter ,Routes,Route} from 'react-router-dom';
@@ -9,7 +9,16 @@ import Paper from './components/events/paper';
 import Poster from './components/events/poster';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  const spinner = document.getElementById("spinner");
+  if (spinner) {
+    setTimeout(() => {
+      spinner.style.display = "none";
+      setLoading(false);
+    }, 2000);
+  }
   return (
+    !loading && (
     <div className="App">
       <BrowserRouter>
       <Routes>
@@ -22,6 +31,7 @@ function App() {
       </Routes>
       </BrowserRouter>
     </div>
+  )
   );
 }
 export default App;
