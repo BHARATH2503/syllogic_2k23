@@ -10,12 +10,9 @@
 }
 
 .wrapper {
-  /* background: radial-gradient(#272727, #1b1b1b); */
   display: grid;
   grid-template-areas: 'overlap';
-  /* place-content: center; */
   text-transform: uppercase;
-  /* height: 30vh; */
   margin-bottom: 5%;
 }
 .wrappertext{
@@ -231,12 +228,6 @@ div.fg {
   color: #fff;
   min-width: 150px;
 }
-
-/* @media (max-width:992px) {
-  .countdown-container {
-    margin: 1 2rem;
-  }
-} */
 
 @media (max-width:767px) {
   .full1{

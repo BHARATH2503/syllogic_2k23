@@ -1,5 +1,4 @@
 import "../css/nontech.css"
-// import kec from "../assets/kec.png";
 import chem from "../assets/chemlogo.jpg";
 import Logo from '../assets/chemlogo2.png'
 import Quiz from '../assets/quiz.png'
@@ -8,9 +7,7 @@ import Minute from '../assets/minute.png'
 import {  Navbar  } from 'react-bootstrap';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Link } from "react-router-dom";
-// import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
+
 export default function Nontech() {
     return (
         <>
