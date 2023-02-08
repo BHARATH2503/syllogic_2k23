@@ -125,7 +125,7 @@ export default function Mainpage() {
             </div>
             <div  className="reg">
             <h3 className="bot1">Last Date of Registration</h3>
-              10 MARCH 2023
+              10 MARCH
                 
             </div>
         </div>
