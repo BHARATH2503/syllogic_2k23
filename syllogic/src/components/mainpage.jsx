@@ -16,6 +16,7 @@ import sc3 from "../assets/sc3.jpg";
 import mail from "../assets/gmail.png";
 import insta from "../assets/instagram.png";
 import chem from "../assets/chemlogo.jpg";
+import pay from "../assets/payment.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
@@ -92,29 +93,43 @@ export default function Mainpage() {
                 </div>
                 <h3 className="det">Event Details</h3>
                 <div className="details">
-                    
-            <div className="reg">
-             <h3 className="bot">Event Date and Venue</h3>
-                    DATE : 18 MARCH 2023 <br />
-                    VENUE : MAHARAJA   AUDITORIUM
-            </div>
-            <div className="reg">
-                <h3 className="bot">Registration Fees</h3> 
-                    For IIChE Membership <b>Rs.200</b>   <br />
-                    For Non-IIChE Membership <b>Rs.250</b> <br />
-                    Including Accomodation and Food
-            </div>
-            <div  className="reg">
-            <h3 className="bot1">Last Date of Registration</h3>
-              10 MARCH 2023
-                
-            </div>
-        </div>
 
-                
+                    <div className="reg">
+                        <h3 className="bot">Event Date and Venue</h3>
+                        DATE : 24 MARCH 2023 <br />
+                        VENUE : MAHARAJA   AUDITORIUM
+                    </div>
+                    <div className="reg">
+                        <h3 className="bot">Registration Fees</h3>
+                        For IIChE Membership <b className="clg1" >Rs.200</b>   <br />
+                        For Non-IIChE Membership <b  className="clg1">Rs.250</b> <br />
+                        Including Food <br />
+                        For hostel stay extra fees
+                    </div>
+                    <div className="regp">
+                        <h3 className="bot1">Payment</h3>
+                        <div className="row">
+                            <div className="col-7 paydetails">
+                                <b>Scan the QR code for payment</b> <br />
+                                <small>Payee Name : DEENADHAYALAN RAMACHANDRAN</small> <br />
+                                <small>Payee Number : 9994041738</small> <br />
+                                <small>UPI ID : deenadhayalan18101@okhdfcbank</small> <br />
+                                <b className="clg1">Note:</b> <br />
+                                Please attach the payment screenshot in the given registration form.
+
+                            </div>
+                            <div className="col-5">
+                                <img src={pay} alt="payment" className="payment" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
 
 
-                <div style={{ paddingBottom: "0%" }}>
+
+
+                <div>
                     <a href="#event">
                         <div className='scrolldown'>
                             <div className="chevrons">
@@ -145,7 +160,15 @@ export default function Mainpage() {
                                             Poster Presentation
                                         </li>
                                     </ol>
-                                    <small>The participants can participate in both paper and poster presentation</small>
+
+                                    <small>The participants can participate in both paper and poster presentation.</small> <br /> <br />
+                                    <small>
+                                        <b className="clg1">Note:</b> <br />
+                                        Chemical domain related papers and posters are only accepted. <br />
+                                                </small>
+
+
+
                                 </div>
                                 <ul className="postcard__tagbox">
                                     <Button className="button2" onClick={tech}>Register</Button>
@@ -172,7 +195,7 @@ export default function Mainpage() {
                                     <small>The participants can participate in all non technical events</small>
                                 </div>
                                 <ul className="postcard__tagbox">
-                                <Button className="button2" onClick={nontech}>Register</Button>
+                                    <Button className="button2" onClick={nontech}>Register</Button>
                                 </ul>
                             </div>
                         </article>
@@ -186,7 +209,7 @@ export default function Mainpage() {
 
 
             <div className="container">
-                    <br />
+                <br />
                 <b className="clgcont">UPCOMING EVENT</b>
                 <iframe className="framev w-100 mt-3" src="https://www.youtube.com/embed/sCpRzUfzi4s?rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="true"></iframe>
 
@@ -280,6 +303,9 @@ export default function Mainpage() {
                                 <h3 className="clgcont1 mt-2" > Student Coordinators</h3>
                                 <h5 className="coname">Mr R.Deenadhayalan - +91 99940 41738</h5>
                                 <h5 className="coname mt-2">Mr R.Pavendiran - +91 93602 74496</h5>
+                                <h5 className="coname mt-2">Ms A.Priyanga  - +91 93613 66206</h5>
+                                <h5 className="coname mt-2">Mr U.Dinakaran - +91 86085 08021</h5>
+                                <h5 className="coname mt-2">Mr M.Sriram - +91 97917 31049</h5>
                             </div>
                         </div>
 
