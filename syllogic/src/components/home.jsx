@@ -1,12 +1,13 @@
 import "../css/home.css"
 import { Link } from "react-router-dom";
-import "../assets/js/timer.js"; 
+import "../assets/js/timer.js";
+
 
 export default function Home() {
 
     return (
         <>
-            <div className="full1">
+            <div className="full1"  >
 
                 <div className="wrapper ">
                     <div className="bg wrappertext"> Syllogic 2k23 </div>
@@ -41,6 +42,8 @@ export default function Home() {
                     <Link to="/home"> <button className='button1'>Let's Go</button></Link>
                 </div>
             </div>
+            {/* <Preload/> */}
+
         </>
     )
 }

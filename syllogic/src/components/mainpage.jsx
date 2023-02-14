@@ -143,7 +143,7 @@ export default function Mainpage() {
             {/*-------------------------------- Event page-------------------------------- */}
             <div id="event" className="events">
                 <section className="dark">
-                    <div className="container py-4">
+                    <div className="container my-4">
                         <h1 className="clg1" id="pageHeaderTitle">Syllogic Events</h1>
 
                         <article className="postcard gold">
