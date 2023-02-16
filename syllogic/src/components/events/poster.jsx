@@ -17,12 +17,12 @@ export default function Poster(){
           <li>Three minutes will be permitted for the presentation of the poster and two minutes will be for queries</li>
           <li>All participants will be awarded with the certification of participation</li>
           <li>The prize will be distributed based on the opinion of juries</li>
-          <li>Abstract should be submitted in registration link before 10-03-2023</li>
+          <li>Abstract should be submitted in registration link</li>
          </ul>
          </div>
          <div className='col-lg-6 my-auto' id='reg'>
             <h3 className='hhh'>Registration link</h3>
-            <a href=""><button className="btn btn-warning mt-3" id='bb'>Register</button></a>
+            <a href="https://forms.gle/d71bzCS3LvqLjHrH8"><button className="btn btn-warning mt-3" id='bb'>Register</button></a>
         </div>
         </div></div>
     </div>

@@ -96,33 +96,36 @@ export default function Mainpage() {
 
                     <div className="reg">
                         <h3 className="bot">Event Date and Venue</h3>
-                        DATE : 24 MARCH 2023 <br />
-                        VENUE : MAHARAJA   AUDITORIUM
+                        DATE : <b className="clg1">24 MARCH 2023</b> <br />
+                        VENUE : MAHARAJA   AUDITORIUM <br />
+                        LAST DATE FOR REGISTRATION  <br /> <b className="clg1">18 MARCH 2023</b> 
                     </div>
                     <div className="reg">
                         <h3 className="bot">Registration Fees</h3>
                         For IIChE Membership <b className="clg1" >Rs.200</b>   <br />
                         For Non-IIChE Membership <b  className="clg1">Rs.250</b> <br />
                         Including Food <br />
-                        For hostel stay extra fees
+                        For hostel accomondation <b className="clg1" >Rs.300</b>
                     </div>
                     <div className="regp">
                         <h3 className="bot1">Payment</h3>
                         <div className="row">
-                            <div className="col-7 paydetails">
+                            <div className="col-6 paydetails mt-2">
                                 <b>Scan the QR code for payment</b> <br />
                                 <small>Payee Name : DEENADHAYALAN RAMACHANDRAN</small> <br />
                                 <small>Payee Number : 9994041738</small> <br />
                                 <small>UPI ID : deenadhayalan18101@okhdfcbank</small> <br />
-                                <b className="clg1">Note:</b> <br />
-                                Please attach the payment screenshot in the given registration form.
-
+                                
                             </div>
-                            <div className="col-5">
+                            <div className="col-6">
                                 <img src={pay} alt="payment" className="payment" />
                             </div>
+                            <div className="note">
+                            <b className="clg1">Note : </b> 
+                                Please attach the payment screenshot in the given registration form
+                            </div>
                         </div>
-
+                        
                     </div>
                 </div>
 
@@ -144,7 +147,7 @@ export default function Mainpage() {
             <div id="event" className="events">
                 <section className="dark">
                     <div className="container my-4">
-                        <h1 className="clg1" id="pageHeaderTitle">Syllogic Events</h1>
+                        <h1 className="clg1" id="syllogic">Syllogic Events</h1>
 
                         <article className="postcard gold">
                             <img className="postcard__img" src={Tech} alt="Title" />
@@ -183,16 +186,9 @@ export default function Mainpage() {
                                 <div className="postcard__preview-txt">
                                     <ol>
                                         <li>
-                                            Quiz
-                                        </li>
-                                        <li>
-                                            Attain Brain
-                                        </li>
-                                        <li>
                                             Minute to Win'It
                                         </li>
                                     </ol>
-                                    <small>The participants can participate in all non technical events</small>
                                 </div>
                                 <ul className="postcard__tagbox">
                                     <Button className="button2" onClick={nontech}>Register</Button>
