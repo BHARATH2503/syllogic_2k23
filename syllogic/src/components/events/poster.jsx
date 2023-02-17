@@ -22,7 +22,7 @@ export default function Poster(){
          </div>
          <div className='col-lg-6 my-auto' id='reg'>
             <h3 className='hhh'>Registration link</h3>
-            <a href="https://forms.gle/d71bzCS3LvqLjHrH8"><button className="btn btn-warning mt-3" id='bb'>Register</button></a>
+            <a href="https://forms.gle/d71bzCS3LvqLjHrH8" target="_blank" rel="noreferrer noopenner"><button className="btn btn-warning mt-3" id='bb'>Register</button></a>
         </div>
         </div></div>
     </div>

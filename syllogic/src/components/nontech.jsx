@@ -35,7 +35,7 @@ export default function Nontech() {
                                     </div>
                                 </div>
                                 <div>
-                                   <a href="https://forms.gle/iA7AshU1JcJai5Sx6"> <button className="btn" id="d1">Register</button></a>
+                                   <a href="https://forms.gle/iA7AshU1JcJai5Sx6" target="_blank" rel="noreferrer noopenner"><button className="btn" id="d1">Register</button></a>
                                 </div>
                             </div>
                         </div>
