@@ -329,6 +329,9 @@ h3.bot,
 
 }
 
+.col-lg-4{
+  width: 25%;
+}
 .contact {
   height: max-content;
   margin-top: 3%;
@@ -531,7 +534,9 @@ h3.bot,
     font-size: 10px;
 
   }
-
+  .col-lg-4{
+    width:100%;
+  }
   .clgcont {
     font-size: 18px;
   }

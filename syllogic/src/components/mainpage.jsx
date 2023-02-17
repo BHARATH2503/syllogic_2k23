@@ -13,6 +13,7 @@ import Tech from '../assets/tech.jpg'
 import sc1 from "../assets/sc1.jpg";
 import sc2 from "../assets/sc2.jpg";
 import sc3 from "../assets/sc3.jpg";
+import sc4 from "../assets/sc4.jpg";
 import mail from "../assets/gmail.png";
 import insta from "../assets/instagram.png";
 import chem from "../assets/chemlogo.jpg";
@@ -105,7 +106,7 @@ export default function Mainpage() {
                         For IIChE Membership <b className="clg1" >Rs.200</b>   <br />
                         For Non-IIChE Membership <b  className="clg1">Rs.250</b> <br />
                         Including Food <br />
-                        For hostel accomondation <b className="clg1" >Rs.300</b>
+                        For hostel accommodation <b className="clg1" >Rs.300</b>
                     </div>
                     <div className="regp">
                         <h3 className="bot1">Payment</h3>
@@ -243,7 +244,7 @@ export default function Mainpage() {
 
                 <div className="row mt-3  ">
                     <div className="col-lg-12 col-md-3">
-                        <img className="staffs" src={hod} alt="" />
+                        <img className="staffs" src={hod} alt="HOD" />
                         <br></br>
                         <small className="clg1">Dr. K. KANNAN
                         </small>
@@ -254,16 +255,16 @@ export default function Mainpage() {
                 <div className="row mt-5">
                     <b className="clgcont">STAFF COORDINATORS</b>
                     <div className="col-lg-4 col-md-3 mt-3 ">
-                        <img className="staffs" src={sc1} alt="" />
+                        <img className="staffs" src={sc1} alt="STAFF" />
                         <br></br>
 
                         <small className="clg1">Dr. A. S. PERIASAMY MANIKANDAN<br></br>
-                            Associate Proffesor
+                            Associate Profesor
                             Departmnt of Chemical Engineering</small>
 
                     </div>
                     <div className="col-lg-4 col-md-3 mt-3">
-                        <img className="staffs" src={sc2} alt="" />
+                        <img className="staffs" src={sc2} alt="STAFF" />
                         <br></br>
                         <small className="clg1">S. MOTHIL <br></br>
                             Assistant Professor
@@ -272,9 +273,17 @@ export default function Mainpage() {
 
                     </div>
                     <div className="col-lg-4 col-md-3 mt-3">
-                        <img className="staffs" src={sc3} alt="" />
+                        <img className="staffs" src={sc3} alt="STAFF" />
                         <br></br>
                         <small className="clg1">T. SATHISH<br></br>
+                            Assistant Professor
+                            Departmnt of Chemical Engineering</small>
+
+                    </div>
+                    <div className="col-lg-4 col-md-3 mt-3">
+                        <img className="staffs" src={sc4} alt="STAFF" />
+                        <br></br>
+                        <small className="clg1">S. YUVARAJ <br></br>
                             Assistant Professor
                             Departmnt of Chemical Engineering</small>
 
