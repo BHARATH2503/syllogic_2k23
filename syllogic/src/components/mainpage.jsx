@@ -260,7 +260,7 @@ export default function Mainpage() {
 
                         <small className="clg1">Dr. A. S. PERIASAMY MANIKANDAN<br></br>
                             Associate Profesor
-                            Departmnt of Chemical Engineering</small>
+                            Department of Chemical Engineering</small>
 
                     </div>
                     <div className="col-lg-4 col-md-3 mt-3">
@@ -268,7 +268,7 @@ export default function Mainpage() {
                         <br></br>
                         <small className="clg1">S. MOTHIL <br></br>
                             Assistant Professor
-                            Departmnt of Chemical Engineering</small>
+                            Department of Chemical Engineering</small>
 
 
                     </div>
@@ -277,7 +277,7 @@ export default function Mainpage() {
                         <br></br>
                         <small className="clg1">T. SATHISH<br></br>
                             Assistant Professor
-                            Departmnt of Chemical Engineering</small>
+                            Department of Chemical Engineering</small>
 
                     </div>
                     <div className="col-lg-4 col-md-3 mt-3">
@@ -285,7 +285,7 @@ export default function Mainpage() {
                         <br></br>
                         <small className="clg1">S. YUVARAJ <br></br>
                             Assistant Professor
-                            Departmnt of Chemical Engineering</small>
+                            Department of Chemical Engineering</small>
 
                     </div>
 
