@@ -240,7 +240,7 @@ export default function Mainpage() {
             {/* contact */}
             <div className="images">
 
-                <b className="clgcont">DEPARTMENT HOD</b>
+                <b className="clgcont">HEAD OF THE DEPARTMENT</b>
 
                 <div className="row mt-3  ">
                     <div className="col-lg-12 col-md-3">
@@ -259,7 +259,7 @@ export default function Mainpage() {
                         <br></br>
 
                         <small className="clg1">Dr. A. S. PERIASAMY MANIKANDAN<br></br>
-                            Associate Profesor
+                            Associate Professor
                             Departmnt of Chemical Engineering</small>
 
                     </div>
