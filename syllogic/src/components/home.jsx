@@ -1,6 +1,6 @@
 import "../css/home.css"
 import { Link } from "react-router-dom";
-import "../assets/js/timer.js";
+// import "../assets/js/timer.js";
 
 
 export default function Home() {
